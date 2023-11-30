@@ -1,0 +1,25 @@
+{
+    "Armours":
+    {
+        "Leather Armour"            :[{"phy": 30, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Chainmail Armour"          :[{"phy": 45, "magic":  0, "holy": 10, "elemental":  5, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Cast Iron Set"             :[{"phy": 40, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Wrought Iron Set"          :[{"phy": 50, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Alloyed Set"               :[{"phy": 20, "magic": 30, "holy": 20, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Castle Guard Set"          :[{"phy": 45, "magic": 10, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Rare"}],
+        "Elven Armour"              :[{"phy": 10, "magic": 50, "holy": 60, "elemental": 10, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Barbarian Set"             :[{"phy": 75, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Rare"}],
+        "Monk Robes"                :[{"phy": 10, "magic": 20, "holy": 20, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon":-1, "guard": 50, "rarity": "Rare"}],
+        "Animal Hide Set"           :[{"phy": 50, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Samurai set"               :[{"phy": 70, "magic": 20, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Epic"}],
+        "Shadow Set"                :[{"phy": 20, "magic":  0, "holy": 60, "elemental":  0, "slash": 0, "pierce": 0, "bludgeon":-1, "guard": 50, "rarity": "Epic"}],
+        "Knight Plate Set"          :[{"phy": 60, "magic": 40, "holy": 30, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Epic"}],
+        "Commonfolk Robes"          :[{"phy": 20, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard": 50, "rarity": "Rare"}],
+        "Brimstone Plates"          :[{"phy":100, "magic":  0, "holy":  0, "elemental": 90, "slash": 1, "pierce": 0, "bludgeon": 1, "guard": 50, "rarity": "Legendary"}],
+        "DragonScale Set"           :[{"phy":100, "magic": 70, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Legendary"}],
+        "Archane Robes"             :[{"phy":100, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Legendary"}],
+        "Greatwyrm Scales"          :[{"phy":100, "magic":  0, "holy":  0, "elemental": 60, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Mythic"}],
+        "Moonweave Robes"           :[{"phy": 30, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Mythic"}],
+        "Yogi Robes"                :[{"phy":-20, "magic": 30, "holy":100, "elemental": 90, "slash": 1, "pierce":-1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}] 
+    }
+}

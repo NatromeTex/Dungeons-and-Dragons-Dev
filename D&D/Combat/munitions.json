@@ -1,0 +1,48 @@
+{
+    "non-weapon":
+    {
+        "Shuriken"              :[{"max": 20, "phy":40, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Throwing Knife"       :[{"max": 20, "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Chakra"                :[{"max": 10, "phy":50, "magic": 0, "holy": 5, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
+        "Vial of Acid"          :[{"max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Vial of Base"          :[{"max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Pouch of Gunpowder"    :[{"max": 10, "phy": 1, "magic": 0, "holy": 0, "elemental":50, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Uncommon"}]
+    },
+    "weapon":
+    {
+        "Tomahawk"              :[{"max": 10, "phy":50, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
+        "Javelin"               :[{"max":  5, "phy":80, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Boomerang"             :[{"max":  5, "phy":90, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Rare"}],
+        "Greek Fire"            :[{"max": 20, "phy":20, "magic": 0, "holy": 0, "elemental":150, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Epic"}]
+    },
+    "arrows":
+    {
+        "Arrow"                 :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Fire Arrow"            :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Poison Arrow"          :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Silver Arrows"         :[{"max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Acid Arrows"           :[{"max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Moonlight Shard"       :[{"max": 50, "phy":10, "magic":80, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
+        "Frost Arrows"          :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Shadow Hunter Arrows"  :[{"max": 50, "phy":50, "magic": 0, "holy":60, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}]
+    },
+    "bolts":
+    {
+        "Bolt"                  :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Fire Bolt"             :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Poison Bolt"           :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Silver Bolt"           :[{"max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Acid Bolt"             :[{"max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Ballista Bolt"         :[{"max": 50, "phy":80, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Frost Bolt"            :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "HawkFeather Bolt"      :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":20, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}]
+    },
+    "great_arrows":
+    {
+        "Great Arrow"           :[{"max": 20, "phy":60, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Ironwood Missile"      :[{"max": 20, "phy":80, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Titansteel Shaft"      :[{"max": 20, "phy":40, "magic": 40, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Tempest Arrows"        :[{"max": 20, "phy":50, "magic":  0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Moonrock Great Arrow"  :[{"max": 20, "phy":10, "magic":100, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "Long_Swords":
+    {
+        "Estoc"                 :[{"phy":100, "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Zweihander"            :[{"phy":132, "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Odachi"                :[{"phy":98,  "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Epic"}],
+        "Spatha"                :[{"phy":105, "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "English Longsword"     :[{"phy":110, "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Greatsword"            :[{"phy":175, "magic":0, "holy":0, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":100, "rarity": "Mythic"}] 
+    },
+    "Great_Axe":
+    {
+        "Great Axe"             :[{"phy": 96, "magic": 0, "holy": 0, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Epic"}],
+        "Halberd"               :[{"phy":130, "magic": 0, "holy": 0, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Uncommon"}],
+        "Golden Halberd"        :[{"phy":120, "magic": 0, "holy":25, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Legendary"}],
+        "Viking Broadaxe"       :[{"phy":150, "magic": 0, "holy": 0, "elemental":0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":80, "rarity": "Rare"}],
+        "Angle Wings Axe"       :[{"phy":220, "magic": 0, "holy":50, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":50, "rarity": "Mythic"}]
+    },
+    "Swords":
+    {
+        "Steel Shortsword"      :[{"phy": 35, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Uchigatana"            :[{"phy": 60, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
+        "Rapier"                :[{"phy": 48, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Common"}],
+        "Talvar"                :[{"phy": 72, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Dao"                   :[{"phy": 50, "magic":13, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Cutlass"               :[{"phy": 75, "magic": 0, "holy":0, "elemental":5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Scimitar"              :[{"phy": 55, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
+        "ShadowHunter"          :[{"phy":145, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
+        "Crystal Sword"         :[{"phy": 75, "magic":60, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
+    },
+    "Daggers":
+    {
+        "Steel Karambit"        :[{"phy": 30, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Qatar"                 :[{"phy": 25, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
+        "Hunting Knife"         :[{"phy": 15, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
+        "Bayonet"               :[{"phy": 20, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Sickle"                :[{"phy": 50, "magic": 0, "holy":0, "elemental":0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":10, "rarity": "Uncommon"}]
+    },
+    "Battle_Hammers":
+    {
+        "Wooden Club"           :[{"phy": 95, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Common"}],
+        "Stone Hammer"          :[{"phy":115, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Rare"}],
+        "Great Club"            :[{"phy":160, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Epic"}],
+        "Steel Hammer"          :[{"phy":175, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Uncommon"}],
+        "Smithing Hammer"       :[{"phy":110, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Rare"}],
+        "Shock Hammer"          :[{"phy": 70, "magic": 0, "holy":0, "elemental":40, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
+        "Mace"                  :[{"phy":140, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Rare"}],
+        "Morningstar"           :[{"phy": 80, "magic": 0, "holy":0, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 60, "rarity": "Epic"}]
+    },
+    "Spears":
+    {
+        "Stone Hunting Spear"   :[{"phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Common"}],
+        "Naginata"              :[{"phy": 75, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Uncommon"}],
+        "Trishula"              :[{"phy":115, "magic": 0, "holy":25, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard":80, "rarity": "Legendary"}],
+        "Harpoon"               :[{"phy": 85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Lance"                 :[{"phy": 70, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
+        "Obsidian Spear"        :[{"phy":100, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}]
+    }
+}

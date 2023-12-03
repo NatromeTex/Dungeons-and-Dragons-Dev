@@ -1,0 +1,43 @@
+{
+    "Staffs":
+    {
+        "Wooden Staff",
+        "Crowned Wooden Staff",
+        "Mage Staff",
+        "Ashen Staff",
+        "Academy Staff",
+        "Mystic Primestaff",
+        "Aroura Sceptor",
+        "Willow Tear Staff",
+        "Celestial Staff",
+        "Dark Elf Staff",
+        "Brimestone Primestaff",
+        "Blackrod Staff",
+        "Golden Sceptor",
+        "Astroidcore Primestaff",
+        "Mortum Staff",
+        "Warlock's Cane",
+        "Corruptis Primestaff",
+        "Nightkiss"
+    },
+    "Wands":
+    {
+        "Wand",
+        "Ashem Greatwand",
+        "Burnt Ironwood Wand",
+        "Soulstice Wand",
+        "Crystal Lightwand",
+        "Elescythe",
+        "Willowand",
+        "Amathystcore Wand",
+        "Necris",
+        "Alloyed Chronostalk",
+        "Glass Wand",    
+    },
+    "Seals":
+    {
+        "Hearthstone Seal",
+        "Arachne's Heart",
+        ""
+    }
+}

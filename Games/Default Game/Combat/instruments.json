@@ -1,0 +1,13 @@
+{
+    "Stringed":
+    {
+        "Fiddle"            :[{"phy": 20, "guard": 30, "boost": ["Melody"],         "allowed": ["Melody"],                  "rarity": "Uncommon"}],
+        "Lute"              :[{"phy": 15, "guard": 25, "boost": ["Harmony"],        "allowed": ["Harmony", "Strum"],        "rarity": "Common"}],
+        "Harp"              :[{"phy": 12, "guard": 20, "boost": ["Serenade"],       "allowed": ["Serenade", "Pluck"],       "rarity": "Common"}],
+        "Mandolin"          :[{"phy": 18, "guard": 28, "boost": ["Melody", "Echo"], "allowed": ["Melody", "Echo", "Pluck"], "rarity": "Rare"}],
+        "Violin"            :[{"phy": 22, "guard": 35, "boost": ["Sonata"],         "allowed": ["Sonata", "Bow"],           "rarity": "Rare"}],
+        "Cello"             :[{"phy": 25, "guard": 40, "boost": ["Vibrato"],        "allowed": ["Vibrato", "Bow"],          "rarity": "Rare"}],
+        "Nero's Fiddle"     :[{"phy": 40, "guard": 32, "boost": ["Riff"],           "allowed": ["Riff", "Strum"],           "rarity": "Common"}],
+        "Zither"            :[{"phy": 16, "guard": 27, "boost": ["Resonance"],      "allowed": ["Resonance", "Pluck"],      "rarity": "Uncommon"}]   
+    }
+}

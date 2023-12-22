@@ -1,13 +1,42 @@
 {
     "Stringed":
     {
-        "Fiddle"            :[{"phy": 20, "guard": 30, "boost": ["Melody"],         "allowed": ["Melody"],                  "rarity": "Uncommon"}],
-        "Lute"              :[{"phy": 15, "guard": 25, "boost": ["Harmony"],        "allowed": ["Harmony", "Strum"],        "rarity": "Common"}],
-        "Harp"              :[{"phy": 12, "guard": 20, "boost": ["Serenade"],       "allowed": ["Serenade", "Pluck"],       "rarity": "Common"}],
-        "Mandolin"          :[{"phy": 18, "guard": 28, "boost": ["Melody", "Echo"], "allowed": ["Melody", "Echo", "Pluck"], "rarity": "Rare"}],
-        "Violin"            :[{"phy": 22, "guard": 35, "boost": ["Sonata"],         "allowed": ["Sonata", "Bow"],           "rarity": "Rare"}],
-        "Cello"             :[{"phy": 25, "guard": 40, "boost": ["Vibrato"],        "allowed": ["Vibrato", "Bow"],          "rarity": "Rare"}],
-        "Nero's Fiddle"     :[{"phy": 40, "guard": 32, "boost": ["Riff"],           "allowed": ["Riff", "Strum"],           "rarity": "Common"}],
-        "Zither"            :[{"phy": 16, "guard": 27, "boost": ["Resonance"],      "allowed": ["Resonance", "Pluck"],      "rarity": "Uncommon"}]   
+        "Fiddle"            :[{"phy": 20, "guard": 30, "boost": ["Melody"],      "allowed": ["Melody"],                  "rarity": "Uncommon"}],
+        "Lute"              :[{"phy": 15, "guard": 25, "boost": ["Harmony"],     "allowed": ["Harmony", "Strum"],        "rarity": "Common"}],
+        "Harp"              :[{"phy": 12, "guard": 20, "boost": ["Serenade"],    "allowed": ["Serenade", "Pluck"],       "rarity": "Common"}],
+        "Mandolin"          :[{"phy": 18, "guard": 28, "boost": ["Melody"],      "allowed": ["Melody", "Echo", "Pluck"], "rarity": "Rare"}],
+        "Siren Hair Harp"   :[{"phy": 22, "guard": 35, "boost": ["Sonata"],      "allowed": ["Sonata", "Bow"],           "rarity": "Epic"}],
+        "Cello"             :[{"phy": 25, "guard": 40, "boost": ["Vibrato"],     "allowed": ["Vibrato", "Bow"],          "rarity": "Rare"}],
+        "Nero's Fiddle"     :[{"phy": 40, "guard": 32, "boost": ["Riff"],        "allowed": ["Riff", "Strum"],           "rarity": "Legendary"}],
+        "Zither"            :[{"phy": 16, "guard": 27, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Uncommon"}],
+        "Sitar"             :[{"phy": 50, "guard": 40, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Rare"}]   
+    },
+    "Percussion":
+    {
+        "Bongo Belt"        :[{"phy": 18, "guard": 25, "boost": ["Beat"],       "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
+        "Drum"              :[{"phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
+        "Tambourine"        :[{"phy": 12, "guard": 18, "boost": ["Jingle"],     "allowed": ["Jingle", "Shake"],     "rarity": "Uncommon"}],
+        "Cymbals"           :[{"phy": 15, "guard": 22, "boost": ["Clash"],      "allowed": ["Clash", "Crash"],      "rarity": "Epic"}],
+        "Gong"              :[{"phy": 20, "guard": 30, "boost": ["Resonance"],  "allowed": ["Resonance", "Strike"], "rarity": "Rare"}],
+        "Frame Drum"        :[{"phy": 16, "guard": 20, "boost": ["Thump"],      "allowed": ["Thump", "Pound"],      "rarity": "Rare"}],
+        "Bodhrán"           :[{"phy": 22, "guard": 28, "boost": ["Droning"],    "allowed": ["Droning", "Strike"],   "rarity": "Rare"}],
+        "Claves"            :[{"phy": 10, "guard": 15, "boost": ["Click"],      "allowed": ["Click", "Strike"],     "rarity": "Uncommon"}],
+        "Tongue Drum"       :[{"phy": 14, "guard": 20, "boost": ["Melodic"],    "allowed": ["Melodic", "Strike"],   "rarity": "Epic"}],
+        "Void Hide Drum"    :[{"phy": 25, "guard": 35, "boost": ["Beat"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
+          
+    },
+    "Wind":
+    {
+        "Whistle"           :[{"phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Common"}],
+        "Flute"             :[{"phy": 15, "guard": 20, "boost": ["Melody"],     "allowed": ["Melody", "Blow"],      "rarity": "Common"}],
+        "Pan Flute"         :[{"phy": 12, "guard": 18, "boost": ["Soothing"],   "allowed": ["Soothing", "Play"],    "rarity": "Uncommon"}],
+        "Didgeridoo"        :[{"phy": 20, "guard": 28, "boost": ["Resonance"],  "allowed": ["Resonance", "Blow"],   "rarity": "Rare"}],
+        "Ocarina"           :[{"phy": 10, "guard": 15, "boost": ["Echo"],       "allowed": ["Echo", "Play"],        "rarity": "Uncommon"}],
+        "Horn"              :[{"phy": 18, "guard": 25, "boost": ["Fanfare"],    "allowed": ["Fanfare", "Blow"],     "rarity": "Common"}],
+        "Shofar"            :[{"phy": 22, "guard": 30, "boost": ["Call"],       "allowed": ["Call", "Blow"],        "rarity": "Rare"}],
+        "Syrinx"            :[{"phy": 16, "guard": 22, "boost": ["Whisper"],    "allowed": ["Whisper", "Play"],     "rarity": "Uncommon"}],
+        "Alphorn"           :[{"phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Rare"}],
+        "Death Whistle"     :[{"phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Epic"}],
+        "Vera's Throat"     :[{"phy":  0, "guard":  0, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
     }
 }

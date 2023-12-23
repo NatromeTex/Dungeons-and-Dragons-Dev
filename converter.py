@@ -2,6 +2,9 @@ import os
 import json
 import Inventory
 
+# Currencies included in the game:
+# Copper, Silver, Electrum, Gold, Platinum
+
 def cu_ag(amt):
     return amt / 10
 def cu_es(amt):

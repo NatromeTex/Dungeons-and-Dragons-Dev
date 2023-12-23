@@ -1,24 +1,24 @@
 {
     "Staffs":
     {
-        "Wooden Staff"                  :[{"phy": 5, "magic": 30, "elemental":  0, "guard": 20, "boost":     "Nature", "allowed":                       ["Nature", "Fire", "Water"], "rarity": "Common"}],
-        "Crowned Wooden Staff"          :[{"phy": 5, "magic": 30, "elemental": 20, "guard": 20, "boost":       "Fire", "allowed":                                ["Nature", "Fire"], "rarity": "Common"}],
-        "Mage Staff"                    :[{"phy": 5, "magic": 50, "elemental": 30, "guard": 20, "boost":     "Energy", "allowed":      ["Nature", "Fire", "Telepathy", "Conjuring"], "rarity": "Uncommon"}],
-        "Ashen Staff"                   :[{"phy": 5, "magic": 90, "elemental": 30, "guard": 20, "boost":       "Fire", "allowed":                              ["Fire","Conjuring"], "rarity": "Uncommon"}],
-        "Academy Staff"                 :[{"phy": 5, "magic": 80, "elemental": 30, "guard": 20, "boost":    "Academy", "allowed":            ["Nature", "Fire", "Water", "Academy"], "rarity": "Rare"}],
-        "Mystic Primestaff"             :[{"phy": 5, "magic":130, "elemental": 50, "guard": 20, "boost":     "Terror", "allowed":        ["Nature", "Fire", "Terror", "Necromancy"], "rarity": "Epic"}],
-        "Aroura Sceptor"                :[{"phy": 5, "magic":140, "elemental": 60, "guard": 20, "boost":       "Holy", "allowed": ["Nature", "Fire", "Conjuring", "Energy", "Holy"], "rarity": "Epic"}],
-        "Willow Tear Staff"             :[{"phy": 0, "magic":100, "elemental": 40, "guard":  5, "boost":      "Water", "allowed":              ["Water", "Ice", "Terror", "Energy"], "rarity": "Epic"}],
-        "Celestial Staff"               :[{"phy": 3, "magic":150, "elemental": 10, "guard":  0, "boost":       "Holy", "allowed":                                ["Nature", "Fire"], "rarity": "Rare"}],
-        "Dark Elf Staff"                :[{"phy": 4, "magic":100, "elemental": 60, "guard": 30, "boost":       "Holy", "allowed":     ["Fire", "Telepathy", "Necromancy", "Terror"], "rarity": "Epic"}],
-        "Brimestone Primestaff"         :[{"phy":10, "magic": 95, "elemental": 70, "guard": 40, "boost":       "Fire", "allowed":                   ["Telepathy", "Fire", "Energy"], "rarity": "Legendary"}],
-        "Blackrod Staff"                :[{"phy": 7, "magic": 75, "elemental": 55, "guard": 10, "boost":    "Academy", "allowed":                 ["Terror", "Academy", "Darkness"], "rarity": "Epic"}],
-        "Golden Sceptor"                :[{"phy":15, "magic":120, "elemental": 10, "guard":  7, "boost":       "Holy", "allowed":                      ["Nature", "Holy", "Energy"], "rarity": "Rare"}],
-        "Astroidcore Primestaff"        :[{"phy":30, "magic": 56, "elemental": 35, "guard": 20, "boost":     "Energy", "allowed":                        ["Fire", "Energy", "Holy"], "rarity": "Legendary"}],
-        "Mortum Staff"                  :[{"phy":10, "magic":120, "elemental": 90, "guard": 25, "boost": "Necromancy", "allowed":                      ["Necromancy", "Corruption"], "rarity": "Mythic"}],
-        "Warlock's Cane"                :[{"phy": 2, "magic": 85, "elemental": 60, "guard":  0, "boost":    "Academy", "allowed":                             ["Nature", "Academy"], "rarity": "Rare"}],
-        "Corruptis Primestaff"          :[{"phy": 0, "magic":200, "elemental": 20, "guard": 13, "boost":     "Terror", "allowed":["Necromancy", "Terror", "Darkness", "Corruption"], "rarity": "Mythic"}],
-        "Nightkiss"                     :[{"phy": 0, "magic":169, "elemental": 50, "guard": 15, "boost": "Corruption", "allowed":                        ["Darkness", "Corruption"], "rarity": "Mythic"}]
+        "Wooden Staff"                  :[{"phy": 5, "magic": 30, "elemental":  0, "guard": 20, "boost":     "Nature", "allowed": ["Nature", "Fire", "Water"],                        "rarity": "Common"}],
+        "Crowned Wooden Staff"          :[{"phy": 5, "magic": 30, "elemental": 20, "guard": 20, "boost":       "Fire", "allowed": ["Nature", "Fire"],                                 "rarity": "Common"}],
+        "Mage Staff"                    :[{"phy": 5, "magic": 50, "elemental": 30, "guard": 20, "boost":     "Energy", "allowed": ["Nature", "Fire", "Telepathy", "Conjuring"],       "rarity": "Uncommon"}],
+        "Ashen Staff"                   :[{"phy": 5, "magic": 90, "elemental": 30, "guard": 20, "boost":       "Fire", "allowed": ["Fire","Conjuring"],                               "rarity": "Uncommon"}],
+        "Academy Staff"                 :[{"phy": 5, "magic": 80, "elemental": 30, "guard": 20, "boost":    "Academy", "allowed": ["Nature", "Fire", "Water", "Academy"],             "rarity": "Rare"}],
+        "Mystic Primestaff"             :[{"phy": 5, "magic":130, "elemental": 50, "guard": 20, "boost":     "Terror", "allowed": ["Nature", "Fire", "Terror", "Necromancy"],         "rarity": "Epic"}],
+        "Aroura Sceptor"                :[{"phy": 5, "magic":140, "elemental": 60, "guard": 20, "boost":       "Holy", "allowed": ["Nature", "Fire", "Conjuring", "Energy", "Holy"],  "rarity": "Epic"}],
+        "Willow Tear Staff"             :[{"phy": 0, "magic":100, "elemental": 40, "guard":  5, "boost":      "Water", "allowed": ["Water", "Ice", "Terror", "Energy"],               "rarity": "Epic"}],
+        "Celestial Staff"               :[{"phy": 3, "magic":150, "elemental": 10, "guard":  0, "boost":       "Holy", "allowed": ["Nature", "Fire"],                                 "rarity": "Rare"}],
+        "Dark Elf Staff"                :[{"phy": 4, "magic":100, "elemental": 60, "guard": 30, "boost":       "Holy", "allowed": ["Fire", "Telepathy", "Necromancy", "Terror"],      "rarity": "Epic"}],
+        "Brimestone Primestaff"         :[{"phy":10, "magic": 95, "elemental": 70, "guard": 40, "boost":       "Fire", "allowed": ["Telepathy", "Fire", "Energy"],                    "rarity": "Legendary"}],
+        "Blackrod Staff"                :[{"phy": 7, "magic": 75, "elemental": 55, "guard": 10, "boost":    "Academy", "allowed": ["Terror", "Academy", "Darkness"],                  "rarity": "Epic"}],
+        "Golden Sceptor"                :[{"phy":15, "magic":120, "elemental": 10, "guard":  7, "boost":       "Holy", "allowed": ["Nature", "Holy", "Energy"],                       "rarity": "Rare"}],
+        "Astroidcore Primestaff"        :[{"phy":30, "magic": 56, "elemental": 35, "guard": 20, "boost":     "Energy", "allowed": ["Fire", "Energy", "Holy"],                         "rarity": "Legendary"}],
+        "Mortum Staff"                  :[{"phy":10, "magic":120, "elemental": 90, "guard": 25, "boost": "Necromancy", "allowed": ["Necromancy", "Corruption"],                       "rarity": "Mythic"}],
+        "Warlock's Cane"                :[{"phy": 2, "magic": 85, "elemental": 60, "guard":  0, "boost":    "Academy", "allowed": ["Nature", "Academy"],                              "rarity": "Rare"}],
+        "Corruptis Primestaff"          :[{"phy": 0, "magic":200, "elemental": 20, "guard": 13, "boost":     "Terror", "allowed": ["Necromancy", "Terror", "Darkness", "Corruption"], "rarity": "Mythic"}],
+        "Nightkiss"                     :[{"phy": 0, "magic":169, "elemental": 50, "guard": 15, "boost": "Corruption", "allowed": ["Darkness", "Corruption"],                         "rarity": "Mythic"}]
     },
     "Wands":
     {
@@ -36,7 +36,13 @@
     },
     "Seals":
     {
-        "Hearthstone Seal"              :[{"phy":5, "magic": 30, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy", "rarity": "Mythic"}],
-        "Arachne's Heart"               :[{"phy":5, "magic": 30, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror", "rarity": "Mythic"}]
+        "Academy Seal"                  :[{"phy":5, "magic": 25, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Uncommon"}],
+        "Hearthstone Seal"              :[{"phy":5, "magic": 30, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Arachne's Heart"               :[{"phy":5, "magic": 40, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Mythic"}],
+        "Six Pointed Snowflake"         :[{"phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Blank Scroll"                  :[{"phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Unblinking Eye"                :[{"phy":5, "magic": 60, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Forging Hammer"                :[{"phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Dragonclaw Seal"               :[{"phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":["Holy","Fire"], "rarity": "Mythic"}]
     }
 }

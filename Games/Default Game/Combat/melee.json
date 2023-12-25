@@ -7,6 +7,7 @@
         "Spatha"                :[{"phy":105, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
         "Han Jian"              :[{"phy": 95, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 70, "rarity": "Rare"}],
         "English Longsword"     :[{"phy":110, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Damascus Longsword"    :[{"phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
         "Greatsword"            :[{"phy":175, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":100, "rarity": "Mythic"}] 
     },
     "Great_Axe":
@@ -21,35 +22,37 @@
     },
     "Swords":
     {
-        "Steel Shortsword"      :[{"phy": 35, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Wrought Iron Sword"    :[{"phy": 35, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Steel Arming Sword"    :[{"phy": 35, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Partisan"              :[{"phy": 55, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
-        "Uchigatana"            :[{"phy": 60, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
-        "Blue Flame Katana"     :[{"phy": 75, "magic":30, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Epic"}],
-        "Cold Steel Katana"     :[{"phy": 55, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Rare"}],
-        "Rapier"                :[{"phy": 48, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Common"}],
-        "Talvar"                :[{"phy": 72, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
-        "Ayudha"                :[{"phy": 65, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Iceflame Talvar"       :[{"phy": 67, "magic": 0, "holy":0, "elemental":40, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Legendary"}],
-        "Dao"                   :[{"phy": 50, "magic":13, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Cutlass"               :[{"phy": 75, "magic": 0, "holy":0, "elemental": 5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Scimitar"              :[{"phy": 55, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
-        "ShadowHunter"          :[{"phy":145, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
-        "Crystal Sword"         :[{"phy": 75, "magic":60, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
+        "Steel Shortsword"      :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Wrought Iron Sword"    :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Steel Arming Sword"    :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Partisan"              :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Uchigatana"            :[{"phy": 60, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
+        "Blue Flame Katana"     :[{"phy": 75, "magic":30, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Epic"}],
+        "Cold Steel Katana"     :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Rare"}],
+        "Rapier"                :[{"phy": 48, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Common"}],
+        "Cold Steel Rapier"     :[{"phy": 96, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":35, "rarity": "Epic"}],
+        "Corrupted Rapier"      :[{"phy": 90, "magic": 0, "holy":70, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Legendary"}],
+        "Talvar"                :[{"phy": 72, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Ayudha"                :[{"phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Iceflame Talvar"       :[{"phy": 67, "magic": 0, "holy": 0, "elemental":40, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Legendary"}],
+        "Dao"                   :[{"phy": 50, "magic":13, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Cutlass"               :[{"phy": 75, "magic": 0, "holy": 0, "elemental": 5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Scimitar"              :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
+        "ShadowHunter"          :[{"phy":145, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
+        "Crystal Sword"         :[{"phy": 75, "magic":60, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
     },
     "Daggers":
     {
-        "Steel Karambit"        :[{"phy": 30, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
-        "Copper Blade"          :[{"phy": 18, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 3, "rarity": "Common"}],
-        "Naval Bowie"           :[{"phy": 25, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
-        "Qatar"                 :[{"phy": 25, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
-        "Hunting Knife"         :[{"phy": 15, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
-        "Cold Steel Tanto"      :[{"phy": 35, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Rare"}],
-        "Bayonet"               :[{"phy": 20, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
-        "Sickle"                :[{"phy": 50, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":10, "rarity": "Uncommon"}],
-        "Soul Silencer"         :[{"phy": 80, "magic":60, "holy":0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Mythic"}],
-        "Kukri"                 :[{"phy": 40, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard":30, "rarity": "Rare"}]
+        "Steel Karambit"        :[{"phy": 30, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Copper Blade"          :[{"phy": 18, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 3, "rarity": "Common"}],
+        "Naval Bowie"           :[{"phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
+        "Qatar"                 :[{"phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
+        "Hunting Knife"         :[{"phy": 15, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
+        "Cold Steel Tanto"      :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Rare"}],
+        "Bayonet"               :[{"phy": 20, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Sickle"                :[{"phy": 50, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":10, "rarity": "Uncommon"}],
+        "Soul Silencer"         :[{"phy": 80, "magic":60, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Mythic"}],
+        "Kukri"                 :[{"phy": 40, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard":30, "rarity": "Rare"}]
     },
     "Battle_Hammers":
     {

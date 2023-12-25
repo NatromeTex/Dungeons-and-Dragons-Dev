@@ -21,5 +21,15 @@
         "Greatwyrm Scales"          :[{"phy":100, "magic":  0, "holy":  0, "elemental": 60, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Mythic"}],
         "Moonweave Robes"           :[{"phy": 30, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Mythic"}],
         "Yogi Robes"                :[{"phy":-20, "magic": 30, "holy":100, "elemental": 90, "slash": 1, "pierce":-1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}] 
+    },
+    "Sheilds":
+    {
+        "Wooden Shield"             :[{"phy": 25, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Reinforced Wooden Shield"  :[{"phy": 44, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Iron Shield"               :[{"phy": 50, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 57, "rarity": "Uncommon"}],
+        "Leather Shield"            :[{"phy": 30, "magic":  0, "holy":  0, "elemental": 10, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 20, "rarity": "Common"}],
+        "Alloyed Great Shield"      :[{"phy": 60, "magic":  0, "holy": 40, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 80, "rarity": "Rare"}],
+        "Electrum Plates"           :[{"phy": 20, "magic": 75, "holy":  0, "elemental":  0, "slash":-1, "pierce": 0, "bludgeon": 1, "guard": 50, "rarity": "Rare"}],
+        "Spring Loaded Iron Shield" :[{"phy": 90, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard": 90, "rarity": "Epic"}]
     }
 }

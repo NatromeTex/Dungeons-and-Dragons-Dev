@@ -350,7 +350,702 @@
                 {"name": "Silver", "quantity": 20}
             ]
         }
+    },
+    "Druid":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }        
+    },
+    "Figther":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Monk":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Palladin":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Rogue":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Sorcerer":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Wizard":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
+    },
+    "Warlock":
+    {
+        "loadout_1":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 2, "level": 2},
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Academy Seal", "level": 1},
+                {"name": "Steel Shortsword", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 2}
+            ],
+            "Munitions":
+            [
+                {"name": "Healing Herb", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_2":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        },
+        "loadout_3":
+        {
+            "Potions": 
+            [
+                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 1}
+            ],
+            
+            "Weapons": 
+            [
+                {"name": "Wooden Club", "level": 1},
+                {"name": "Hunting Knife", "level": 1}
+            ],
+            "Armour": 
+            [
+                {"name": "Leather Armour", "level": 1}
+            ],
+            "Munitions":
+            [
+                {"name": "Tomahawk", "quantity": 3},
+                {"name": "Pouch of Gunpowder", "quantity": 4}
+            ],
+            "Currency":
+            [
+                {"name": "Copper", "quantity": 500},
+                {"name": "Silver", "quantity": 20}
+            ]
+        }
     }
-
 }
   

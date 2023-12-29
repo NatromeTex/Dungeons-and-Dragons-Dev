@@ -40,10 +40,10 @@
     "great_arrows":
     {
         "Great Arrow"           :[{"wep_id":"64000", "max": 20, "phy":60, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
-        "Ironwood Missile"      :[{"wep_id":"64000", "max": 20, "phy":80, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
-        "Titansteel Shaft"      :[{"wep_id":"64000", "max": 20, "phy":40, "magic": 40, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Tempest Arrows"        :[{"wep_id":"64000", "max": 20, "phy":50, "magic":  0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Moonrock Great Arrow"  :[{"wep_id":"64000", "max": 20, "phy":10, "magic":100, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}]
+        "Ironwood Missile"      :[{"wep_id":"64001", "max": 20, "phy":80, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Titansteel Shaft"      :[{"wep_id":"64002", "max": 20, "phy":40, "magic": 40, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Tempest Arrows"        :[{"wep_id":"64003", "max": 20, "phy":50, "magic":  0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Moonrock Great Arrow"  :[{"wep_id":"64004", "max": 20, "phy":10, "magic":100, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}]
     },
     "Consumables":
     {

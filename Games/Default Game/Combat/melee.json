@@ -74,6 +74,6 @@
         "Trishula"              :[{"wep_id":"55002", "phy":115, "magic": 0, "holy":25, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard":80, "rarity": "Legendary"}],
         "Harpoon"               :[{"wep_id":"55003", "phy": 85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
         "Lance"                 :[{"wep_id":"55004", "phy": 70, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
-        "Obsidian Spear"        :[{"wep_id":"54000", "phy":100, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}]
+        "Obsidian Spear"        :[{"wep_id":"55005", "phy":100, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}]
     }
 }

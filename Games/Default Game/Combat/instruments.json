@@ -1,42 +1,42 @@
 {
     "Stringed":
     {
-        "Fiddle"            :[{"phy": 20, "guard": 30, "boost": ["Melody"],      "allowed": ["Melody"],                  "rarity": "Uncommon"}],
-        "Lute"              :[{"phy": 15, "guard": 25, "boost": ["Harmony"],     "allowed": ["Harmony", "Strum"],        "rarity": "Common"}],
-        "Harp"              :[{"phy": 12, "guard": 20, "boost": ["Serenade"],    "allowed": ["Serenade", "Pluck"],       "rarity": "Common"}],
-        "Mandolin"          :[{"phy": 18, "guard": 28, "boost": ["Melody"],      "allowed": ["Melody", "Echo", "Pluck"], "rarity": "Rare"}],
-        "Siren Hair Harp"   :[{"phy": 22, "guard": 35, "boost": ["Sonata"],      "allowed": ["Sonata", "Bow"],           "rarity": "Epic"}],
-        "Cello"             :[{"phy": 25, "guard": 40, "boost": ["Vibrato"],     "allowed": ["Vibrato", "Bow"],          "rarity": "Rare"}],
-        "Nero's Fiddle"     :[{"phy": 40, "guard": 32, "boost": ["Riff"],        "allowed": ["Riff", "Strum"],           "rarity": "Legendary"}],
-        "Zither"            :[{"phy": 16, "guard": 27, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Uncommon"}],
-        "Sitar"             :[{"phy": 50, "guard": 40, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Rare"}]   
+        "Fiddle"            :[{"wep_id":"30000", "phy": 20, "guard": 30, "boost": ["Melody"],      "allowed": ["Melody"],                  "rarity": "Uncommon"}],
+        "Lute"              :[{"wep_id":"30001", "phy": 15, "guard": 25, "boost": ["Harmony"],     "allowed": ["Harmony", "Strum"],        "rarity": "Common"}],
+        "Harp"              :[{"wep_id":"30002", "phy": 12, "guard": 20, "boost": ["Serenade"],    "allowed": ["Serenade", "Pluck"],       "rarity": "Common"}],
+        "Mandolin"          :[{"wep_id":"30003", "phy": 18, "guard": 28, "boost": ["Melody"],      "allowed": ["Melody", "Echo", "Pluck"], "rarity": "Rare"}],
+        "Siren Hair Harp"   :[{"wep_id":"30004", "phy": 22, "guard": 35, "boost": ["Sonata"],      "allowed": ["Sonata", "Bow"],           "rarity": "Epic"}],
+        "Cello"             :[{"wep_id":"30005", "phy": 25, "guard": 40, "boost": ["Vibrato"],     "allowed": ["Vibrato", "Bow"],          "rarity": "Rare"}],
+        "Nero's Fiddle"     :[{"wep_id":"30006", "phy": 40, "guard": 32, "boost": ["Riff"],        "allowed": ["Riff", "Strum"],           "rarity": "Legendary"}],
+        "Zither"            :[{"wep_id":"30007", "phy": 16, "guard": 27, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Uncommon"}],
+        "Sitar"             :[{"wep_id":"30008", "phy": 50, "guard": 40, "boost": ["Resonance"],   "allowed": ["Resonance", "Pluck"],      "rarity": "Rare"}]   
     },
     "Percussion":
     {
-        "Bongo Belt"        :[{"phy": 18, "guard": 25, "boost": ["Beat"],       "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
-        "Drum"              :[{"phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
-        "Tambourine"        :[{"phy": 12, "guard": 18, "boost": ["Jingle"],     "allowed": ["Jingle", "Shake"],     "rarity": "Uncommon"}],
-        "Cymbals"           :[{"phy": 15, "guard": 22, "boost": ["Clash"],      "allowed": ["Clash", "Crash"],      "rarity": "Epic"}],
-        "Gong"              :[{"phy": 20, "guard": 30, "boost": ["Resonance"],  "allowed": ["Resonance", "Strike"], "rarity": "Rare"}],
-        "Frame Drum"        :[{"phy": 16, "guard": 20, "boost": ["Thump"],      "allowed": ["Thump", "Pound"],      "rarity": "Rare"}],
-        "Bodhrán"           :[{"phy": 22, "guard": 28, "boost": ["Droning"],    "allowed": ["Droning", "Strike"],   "rarity": "Rare"}],
-        "Claves"            :[{"phy": 10, "guard": 15, "boost": ["Click"],      "allowed": ["Click", "Strike"],     "rarity": "Uncommon"}],
-        "Tongue Drum"       :[{"phy": 14, "guard": 20, "boost": ["Melodic"],    "allowed": ["Melodic", "Strike"],   "rarity": "Epic"}],
-        "Void Hide Drum"    :[{"phy": 25, "guard": 35, "boost": ["Beat"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
+        "Bongo Belt"        :[{"wep_id":"31000", "phy": 18, "guard": 25, "boost": ["Beat"],       "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
+        "Drum"              :[{"wep_id":"31001", "phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Uncommon"}],
+        "Tambourine"        :[{"wep_id":"31002", "phy": 12, "guard": 18, "boost": ["Jingle"],     "allowed": ["Jingle", "Shake"],     "rarity": "Uncommon"}],
+        "Cymbals"           :[{"wep_id":"31003", "phy": 15, "guard": 22, "boost": ["Clash"],      "allowed": ["Clash", "Crash"],      "rarity": "Epic"}],
+        "Gong"              :[{"wep_id":"31004", "phy": 20, "guard": 30, "boost": ["Resonance"],  "allowed": ["Resonance", "Strike"], "rarity": "Rare"}],
+        "Frame Drum"        :[{"wep_id":"31005", "phy": 16, "guard": 20, "boost": ["Thump"],      "allowed": ["Thump", "Pound"],      "rarity": "Rare"}],
+        "Bodhrán"           :[{"wep_id":"31006", "phy": 22, "guard": 28, "boost": ["Droning"],    "allowed": ["Droning", "Strike"],   "rarity": "Rare"}],
+        "Claves"            :[{"wep_id":"31007", "phy": 10, "guard": 15, "boost": ["Click"],      "allowed": ["Click", "Strike"],     "rarity": "Uncommon"}],
+        "Tongue Drum"       :[{"wep_id":"31008", "phy": 14, "guard": 20, "boost": ["Melodic"],    "allowed": ["Melodic", "Strike"],   "rarity": "Epic"}],
+        "Void Hide Drum"    :[{"wep_id":"31009", "phy": 25, "guard": 35, "boost": ["Beat"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
           
     },
     "Wind":
     {
-        "Whistle"           :[{"phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Common"}],
-        "Flute"             :[{"phy": 15, "guard": 20, "boost": ["Melody"],     "allowed": ["Melody", "Blow"],      "rarity": "Common"}],
-        "Pan Flute"         :[{"phy": 12, "guard": 18, "boost": ["Soothing"],   "allowed": ["Soothing", "Play"],    "rarity": "Uncommon"}],
-        "Didgeridoo"        :[{"phy": 20, "guard": 28, "boost": ["Resonance"],  "allowed": ["Resonance", "Blow"],   "rarity": "Rare"}],
-        "Ocarina"           :[{"phy": 10, "guard": 15, "boost": ["Echo"],       "allowed": ["Echo", "Play"],        "rarity": "Uncommon"}],
-        "Horn"              :[{"phy": 18, "guard": 25, "boost": ["Fanfare"],    "allowed": ["Fanfare", "Blow"],     "rarity": "Common"}],
-        "Shofar"            :[{"phy": 22, "guard": 30, "boost": ["Call"],       "allowed": ["Call", "Blow"],        "rarity": "Rare"}],
-        "Syrinx"            :[{"phy": 16, "guard": 22, "boost": ["Whisper"],    "allowed": ["Whisper", "Play"],     "rarity": "Uncommon"}],
-        "Alphorn"           :[{"phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Rare"}],
-        "Death Whistle"     :[{"phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Epic"}],
-        "Vera's Throat"     :[{"phy":  0, "guard":  0, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
+        "Whistle"           :[{"wep_id":"32000", "phy": 18, "guard": 25, "boost": ["Rhythm"],     "allowed": ["Rhythm", "Beat"],      "rarity": "Common"}],
+        "Flute"             :[{"wep_id":"32001", "phy": 15, "guard": 20, "boost": ["Melody"],     "allowed": ["Melody", "Blow"],      "rarity": "Common"}],
+        "Pan Flute"         :[{"wep_id":"32002", "phy": 12, "guard": 18, "boost": ["Soothing"],   "allowed": ["Soothing", "Play"],    "rarity": "Uncommon"}],
+        "Didgeridoo"        :[{"wep_id":"32003", "phy": 20, "guard": 28, "boost": ["Resonance"],  "allowed": ["Resonance", "Blow"],   "rarity": "Rare"}],
+        "Ocarina"           :[{"wep_id":"32004", "phy": 10, "guard": 15, "boost": ["Echo"],       "allowed": ["Echo", "Play"],        "rarity": "Uncommon"}],
+        "Horn"              :[{"wep_id":"32005", "phy": 18, "guard": 25, "boost": ["Fanfare"],    "allowed": ["Fanfare", "Blow"],     "rarity": "Common"}],
+        "Shofar"            :[{"wep_id":"32006", "phy": 22, "guard": 30, "boost": ["Call"],       "allowed": ["Call", "Blow"],        "rarity": "Rare"}],
+        "Syrinx"            :[{"wep_id":"32007", "phy": 16, "guard": 22, "boost": ["Whisper"],    "allowed": ["Whisper", "Play"],     "rarity": "Uncommon"}],
+        "Alphorn"           :[{"wep_id":"32008", "phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Rare"}],
+        "Death Whistle"     :[{"wep_id":"32009", "phy": 25, "guard": 35, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Epic"}],
+        "Vera's Throat"     :[{"wep_id":"32010", "phy":  0, "guard":  0, "boost": ["Echo"],       "allowed": ["Echo", "Blow"],        "rarity": "Legendary"}]
     }
 }

@@ -1,79 +1,79 @@
 {
     "Long_Swords":
     {
-        "Estoc"                 :[{"phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
-        "Zweihander"            :[{"phy":132, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
-        "Odachi"                :[{"phy": 98, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Epic"}],
-        "Spatha"                :[{"phy":105, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
-        "Han Jian"              :[{"phy": 95, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 70, "rarity": "Rare"}],
-        "English Longsword"     :[{"phy":110, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
-        "Damascus Longsword"    :[{"phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
-        "Greatsword"            :[{"phy":175, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":100, "rarity": "Mythic"}] 
+        "Estoc"                 :[{"wep_id":"50000", "phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Zweihander"            :[{"wep_id":"50001", "phy":132, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Odachi"                :[{"wep_id":"50002", "phy": 98, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Epic"}],
+        "Spatha"                :[{"wep_id":"50003", "phy":105, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Han Jian"              :[{"wep_id":"50004", "phy": 95, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 70, "rarity": "Rare"}],
+        "English Longsword"     :[{"wep_id":"50005", "phy":110, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
+        "Damascus Longsword"    :[{"wep_id":"50006", "phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
+        "Greatsword"            :[{"wep_id":"50007", "phy":175, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":100, "rarity": "Mythic"}] 
     },
     "Great_Axe":
     {
-        "Great Axe"             :[{"phy": 96, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Epic"}],
-        "Halberd"               :[{"phy":130, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Uncommon"}],
-        "Golden Halberd"        :[{"phy":120, "magic": 0, "holy":25, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Legendary"}],
-        "Viking Broadaxe"       :[{"phy":150, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":80, "rarity": "Rare"}],
-        "Angle Wings Axe"       :[{"phy":220, "magic": 0, "holy":50, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":50, "rarity": "Mythic"}],
-        "Spring Loaded Hatchet" :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Epic"}],
-        "Sulpher Tip Axe"       :[{"phy": 35, "magic": 0, "holy": 0, "elemental":30, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Common"}]
+        "Great Axe"             :[{"wep_id":"51000", "phy": 96, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Epic"}],
+        "Halberd"               :[{"wep_id":"51001", "phy":130, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Uncommon"}],
+        "Golden Halberd"        :[{"wep_id":"51002", "phy":120, "magic": 0, "holy":25, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Legendary"}],
+        "Viking Broadaxe"       :[{"wep_id":"51003", "phy":150, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":80, "rarity": "Rare"}],
+        "Angle Wings Axe"       :[{"wep_id":"51004", "phy":220, "magic": 0, "holy":50, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":50, "rarity": "Mythic"}],
+        "Spring Loaded Hatchet" :[{"wep_id":"51005", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Epic"}],
+        "Sulpher Tip Axe"       :[{"wep_id":"51006", "phy": 35, "magic": 0, "holy": 0, "elemental":30, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Common"}]
     },
     "Swords":
     {
-        "Steel Shortsword"      :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Wrought Iron Sword"    :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Steel Arming Sword"    :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
-        "Partisan"              :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
-        "Uchigatana"            :[{"phy": 60, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
-        "Blue Flame Katana"     :[{"phy": 75, "magic":30, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Epic"}],
-        "Cold Steel Katana"     :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Rare"}],
-        "Rapier"                :[{"phy": 48, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Common"}],
-        "Cold Steel Rapier"     :[{"phy": 96, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":35, "rarity": "Epic"}],
-        "Corrupted Rapier"      :[{"phy": 90, "magic": 0, "holy":70, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Legendary"}],
-        "Talvar"                :[{"phy": 72, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
-        "Ayudha"                :[{"phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Iceflame Talvar"       :[{"phy": 67, "magic": 0, "holy": 0, "elemental":40, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Legendary"}],
-        "Dao"                   :[{"phy": 50, "magic":13, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Cutlass"               :[{"phy": 75, "magic": 0, "holy": 0, "elemental": 5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
-        "Scimitar"              :[{"phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
-        "ShadowHunter"          :[{"phy":145, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
-        "Crystal Sword"         :[{"phy": 75, "magic":60, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
+        "Steel Shortsword"      :[{"wep_id":"52000", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Wrought Iron Sword"    :[{"wep_id":"52001", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Steel Arming Sword"    :[{"wep_id":"52002", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Common"}],
+        "Partisan"              :[{"wep_id":"52003", "phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Uchigatana"            :[{"wep_id":"52004", "phy": 60, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
+        "Blue Flame Katana"     :[{"wep_id":"52005", "phy": 75, "magic":30, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Epic"}],
+        "Cold Steel Katana"     :[{"wep_id":"52006", "phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Rare"}],
+        "Rapier"                :[{"wep_id":"52007", "phy": 48, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Common"}],
+        "Cold Steel Rapier"     :[{"wep_id":"52008", "phy": 96, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":35, "rarity": "Epic"}],
+        "Corrupted Rapier"      :[{"wep_id":"52009", "phy": 90, "magic": 0, "holy":70, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":25, "rarity": "Legendary"}],
+        "Talvar"                :[{"wep_id":"52010", "phy": 72, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Ayudha"                :[{"wep_id":"52011", "phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Iceflame Talvar"       :[{"wep_id":"52012", "phy": 67, "magic": 0, "holy": 0, "elemental":40, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Legendary"}],
+        "Dao"                   :[{"wep_id":"52013", "phy": 50, "magic":13, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Cutlass"               :[{"wep_id":"52014", "phy": 75, "magic": 0, "holy": 0, "elemental": 5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
+        "Scimitar"              :[{"wep_id":"52015", "phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
+        "ShadowHunter"          :[{"wep_id":"52016", "phy":145, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
+        "Crystal Sword"         :[{"wep_id":"52017", "phy": 75, "magic":60, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
     },
     "Daggers":
     {
-        "Steel Karambit"        :[{"phy": 30, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
-        "Copper Blade"          :[{"phy": 18, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 3, "rarity": "Common"}],
-        "Naval Bowie"           :[{"phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
-        "Qatar"                 :[{"phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
-        "Hunting Knife"         :[{"phy": 15, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
-        "Cold Steel Tanto"      :[{"phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Rare"}],
-        "Bayonet"               :[{"phy": 20, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
-        "Sickle"                :[{"phy": 50, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":10, "rarity": "Uncommon"}],
-        "Soul Silencer"         :[{"phy": 80, "magic":60, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Mythic"}],
-        "Kukri"                 :[{"phy": 40, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard":30, "rarity": "Rare"}]
+        "Steel Karambit"        :[{"wep_id":"53000", "phy": 30, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Copper Blade"          :[{"wep_id":"53001", "phy": 18, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 3, "rarity": "Common"}],
+        "Naval Bowie"           :[{"wep_id":"53002", "phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
+        "Qatar"                 :[{"wep_id":"53003", "phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
+        "Hunting Knife"         :[{"wep_id":"53004", "phy": 15, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
+        "Cold Steel Tanto"      :[{"wep_id":"53005", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Rare"}],
+        "Bayonet"               :[{"wep_id":"53006", "phy": 20, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
+        "Sickle"                :[{"wep_id":"53007", "phy": 50, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":10, "rarity": "Uncommon"}],
+        "Soul Silencer"         :[{"wep_id":"53008", "phy": 80, "magic":60, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Mythic"}],
+        "Kukri"                 :[{"wep_id":"53009", "phy": 40, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard":30, "rarity": "Rare"}]
     },
     "Battle_Hammers":
     {
-        "Wooden Club"           :[{"phy": 95, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Common"}],
-        "Stone Hammer"          :[{"phy":115, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Rare"}],
-        "Great Club"            :[{"phy":160, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Epic"}],
-        "Steel Hammer"          :[{"phy":175, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Uncommon"}],
-        "Smithing Hammer"       :[{"phy":110, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Rare"}],
-        "Shock Hammer"          :[{"phy": 70, "magic": 0, "holy":0, "elemental":40, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
-        "Mace"                  :[{"phy":140, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Rare"}],
-        "Morningstar"           :[{"phy": 80, "magic": 0, "holy":0, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
-        "Flail"                 :[{"phy": 85, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 70, "rarity": "Epic"}],
-        "Sledgehammer"          :[{"phy": 80, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":60, "rarity": "Epic"}]
+        "Wooden Club"           :[{"wep_id":"54000", "phy": 95, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Common"}],
+        "Stone Hammer"          :[{"wep_id":"54001", "phy":115, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Rare"}],
+        "Great Club"            :[{"wep_id":"54002", "phy":160, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Epic"}],
+        "Steel Hammer"          :[{"wep_id":"54003", "phy":175, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Uncommon"}],
+        "Smithing Hammer"       :[{"wep_id":"54004", "phy":110, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Rare"}],
+        "Shock Hammer"          :[{"wep_id":"54005", "phy": 70, "magic": 0, "holy":0, "elemental":40, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
+        "Mace"                  :[{"wep_id":"54006", "phy":140, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Rare"}],
+        "Morningstar"           :[{"wep_id":"54007", "phy": 80, "magic": 0, "holy":0, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
+        "Flail"                 :[{"wep_id":"54008", "phy": 85, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 70, "rarity": "Epic"}],
+        "Sledgehammer"          :[{"wep_id":"54009", "phy": 80, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":60, "rarity": "Epic"}]
     },
     "Spears":
     {
-        "Stone Hunting Spear"   :[{"phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Common"}],
-        "Naginata"              :[{"phy": 75, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Uncommon"}],
-        "Trishula"              :[{"phy":115, "magic": 0, "holy":25, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard":80, "rarity": "Legendary"}],
-        "Harpoon"               :[{"phy": 85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
-        "Lance"                 :[{"phy": 70, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
-        "Obsidian Spear"        :[{"phy":100, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}]
+        "Stone Hunting Spear"   :[{"wep_id":"55000", "phy": 65, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Common"}],
+        "Naginata"              :[{"wep_id":"55001", "phy": 75, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Uncommon"}],
+        "Trishula"              :[{"wep_id":"55002", "phy":115, "magic": 0, "holy":25, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard":80, "rarity": "Legendary"}],
+        "Harpoon"               :[{"wep_id":"55003", "phy": 85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":40, "rarity": "Uncommon"}],
+        "Lance"                 :[{"wep_id":"55004", "phy": 70, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "guard":30, "rarity": "Uncommon"}],
+        "Obsidian Spear"        :[{"wep_id":"54000", "phy":100, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}]
     }
 }

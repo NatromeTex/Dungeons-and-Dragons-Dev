@@ -1,54 +1,54 @@
 {
     "non-weapon":
     {
-        "Shuriken"              :[{"max": 20, "phy":40, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
-        "Throwing Knife"       :[{"max": 20, "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
-        "Chakra"                :[{"max": 10, "phy":50, "magic": 0, "holy": 5, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
-        "Vial of Acid"          :[{"max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Vial of Base"          :[{"max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Pouch of Gunpowder"    :[{"max": 10, "phy": 1, "magic": 0, "holy": 0, "elemental":50, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Uncommon"}]
+        "Shuriken"              :[{"wep_id":"60000", "max": 20, "phy":40, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Throwing Knife"        :[{"wep_id":"60001", "max": 20, "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Chakra"                :[{"wep_id":"60002", "max": 10, "phy":50, "magic": 0, "holy": 5, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
+        "Vial of Acid"          :[{"wep_id":"60003", "max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Vial of Base"          :[{"wep_id":"60004", "max":  5, "phy": 1, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Pouch of Gunpowder"    :[{"wep_id":"60005", "max": 10, "phy": 1, "magic": 0, "holy": 0, "elemental":50, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Uncommon"}]
     },
     "weapon":
     {
-        "Tomahawk"              :[{"max": 10, "phy":50, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
-        "Javelin"               :[{"max":  5, "phy":80, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Boomerang"             :[{"max":  5, "phy":90, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Rare"}],
-        "Greek Fire"            :[{"max": 20, "phy":20, "magic": 0, "holy": 0, "elemental":150, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Epic"}]
+        "Tomahawk"              :[{"wep_id":"61000", "max": 10, "phy":50, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Uncommon"}],
+        "Javelin"               :[{"wep_id":"61001", "max":  5, "phy":80, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Boomerang"             :[{"wep_id":"61002", "max":  5, "phy":90, "magic": 0, "holy": 0, "elemental":  0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Rare"}],
+        "Greek Fire"            :[{"wep_id":"61003", "max": 20, "phy":20, "magic": 0, "holy": 0, "elemental":150, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Epic"}]
     },
     "arrows":
     {
-        "Arrow"                 :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
-        "Fire Arrow"            :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Poison Arrow"          :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Silver Arrows"         :[{"max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Acid Arrows"           :[{"max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Moonlight Shard"       :[{"max": 50, "phy":10, "magic":80, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
-        "Frost Arrows"          :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Shadow Hunter Arrows"  :[{"max": 50, "phy":50, "magic": 0, "holy":60, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}]
+        "Arrow"                 :[{"wep_id":"62000", "max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Fire Arrow"            :[{"wep_id":"62001", "max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Poison Arrow"          :[{"wep_id":"62002", "max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Silver Arrows"         :[{"wep_id":"62003", "max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Acid Arrows"           :[{"wep_id":"62004", "max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Moonlight Shard"       :[{"wep_id":"62005", "max": 50, "phy":10, "magic":80, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
+        "Frost Arrows"          :[{"wep_id":"62006", "max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Shadow Hunter Arrows"  :[{"wep_id":"62007", "max": 50, "phy":50, "magic": 0, "holy":60, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}]
     },
     "bolts":
     {
-        "Bolt"                  :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
-        "Fire Bolt"             :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Poison Bolt"           :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Silver Bolt"           :[{"max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Acid Bolt"             :[{"max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Ballista Bolt"         :[{"max": 50, "phy":80, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Frost Bolt"            :[{"max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "HawkFeather Bolt"      :[{"max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":20, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}]
+        "Bolt"                  :[{"wep_id":"63000", "max": 50, "phy":25, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Fire Bolt"             :[{"wep_id":"63001", "max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Poison Bolt"           :[{"wep_id":"63002", "max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Silver Bolt"           :[{"wep_id":"63003", "max": 50, "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Acid Bolt"             :[{"wep_id":"63004", "max": 50, "phy":20, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Ballista Bolt"         :[{"wep_id":"63005", "max": 50, "phy":80, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Frost Bolt"            :[{"wep_id":"63006", "max": 50, "phy":25, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "HawkFeather Bolt"      :[{"wep_id":"63007", "max": 50, "phy":30, "magic": 0, "holy": 0, "elemental":20, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}]
     },
     "great_arrows":
     {
-        "Great Arrow"           :[{"max": 20, "phy":60, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
-        "Ironwood Missile"      :[{"max": 20, "phy":80, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
-        "Titansteel Shaft"      :[{"max": 20, "phy":40, "magic": 40, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Tempest Arrows"        :[{"max": 20, "phy":50, "magic":  0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Moonrock Great Arrow"  :[{"max": 20, "phy":10, "magic":100, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}]
+        "Great Arrow"           :[{"wep_id":"64000", "max": 20, "phy":60, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Ironwood Missile"      :[{"wep_id":"64000", "max": 20, "phy":80, "magic":  0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Titansteel Shaft"      :[{"wep_id":"64000", "max": 20, "phy":40, "magic": 40, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Tempest Arrows"        :[{"wep_id":"64000", "max": 20, "phy":50, "magic":  0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Moonrock Great Arrow"  :[{"wep_id":"64000", "max": 20, "phy":10, "magic":100, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}]
     },
     "Consumables":
     {
-        "Healing Herbs"         :[{"max": 20, "phy": 0, "magic": 0, "holy": 20, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Common"}],
-        "Heal Rocks"            :[{"max": 20, "phy":40, "magic": 0, "holy": 30, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Common"}],
-        "Resurrection Dagger"   :[{"max": 10, "phy":50, "magic": 0, "holy": 40, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}]
+        "Healing Herbs"         :[{"wep_id":"65000", "max": 20, "phy": 0, "magic": 0, "holy": 20, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 0, "rarity": "Common"}],
+        "Heal Rocks"            :[{"wep_id":"65001", "max": 20, "phy":40, "magic": 0, "holy": 30, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Common"}],
+        "Resurrection Dagger"   :[{"wep_id":"65002", "max": 10, "phy":50, "magic": 0, "holy": 40, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}]
     }
 }

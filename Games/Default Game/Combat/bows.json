@@ -1,30 +1,30 @@
 {
     "Bows":
     {
-        "Long Bow"              :[{"ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity":"Uncommon"}],
-        "Short Bow"             :[{"ammo": "arrows", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
-        "Recurve Bow"           :[{"ammo": "arrows", "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Sinew Bow"             :[{"ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Compound Bow"          :[{"ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Slingshot"             :[{"ammo": "stones", "phy": 0, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Common"}],
-        "Moonshadow Longbow"    :[{"ammo": "arrows", "phy": 5, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
-        "Deadshot Compound Bow" :[{"ammo": "arrows", "phy":60, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
-        "Blue Flame Longbow"    :[{"ammo": "arrows", "phy":30, "magic":70, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Mythic"}]    
+        "Long Bow"              :[{"wep_id":"20000", "ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity":"Uncommon"}],
+        "Short Bow"             :[{"wep_id":"20001", "ammo": "arrows", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Common"}],
+        "Recurve Bow"           :[{"wep_id":"20002", "ammo": "arrows", "phy":15, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Sinew Bow"             :[{"wep_id":"20003", "ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Compound Bow"          :[{"wep_id":"20004", "ammo": "arrows", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Slingshot"             :[{"wep_id":"20005", "ammo": "stones", "phy": 0, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "rarity": "Common"}],
+        "Moonshadow Longbow"    :[{"wep_id":"20006", "ammo": "arrows", "phy": 5, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
+        "Deadshot Compound Bow" :[{"wep_id":"20007", "ammo": "arrows", "phy":60, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
+        "Blue Flame Longbow"    :[{"wep_id":"20008", "ammo": "arrows", "phy":30, "magic":70, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Mythic"}]    
     },
     "Great_Bows":
     {
-        "Ironwood Greatbow"     :[{"ammo": "great_arrows", "phy":60, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
-        "Stormcaller Duskbow"   :[{"ammo": "great_arrows", "phy":60, "magic":45, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Epic"}],
-        "Ashenwood Greatbow"    :[{"ammo": "great_arrows", "phy":55, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Icarus Sunbow"         :[{"ammo": "great_arrows", "phy":45, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Legendary"}],
-        "Snipershot Greatbow"   :[{"ammo": "great_arrows", "phy":85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Legendary"}]
+        "Ironwood Greatbow"     :[{"wep_id":"21000", "ammo": "great_arrows", "phy":60, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Rare"}],
+        "Stormcaller Duskbow"   :[{"wep_id":"21001", "ammo": "great_arrows", "phy":60, "magic":45, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Epic"}],
+        "Ashenwood Greatbow"    :[{"wep_id":"21002", "ammo": "great_arrows", "phy":55, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Icarus Sunbow"         :[{"wep_id":"21003", "ammo": "great_arrows", "phy":45, "magic": 0, "holy": 0, "elemental":60, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Legendary"}],
+        "Snipershot Greatbow"   :[{"wep_id":"21004", "ammo": "great_arrows", "phy":85, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "rarity": "Legendary"}]
     },
     "Crossbows":
     {
-        "Crossbow"              :[{"ammo": "bolts", "phy": 5, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
-        "Mounted Crossbow"      :[{"ammo": "bolts", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
-        "Draconian Pulleybow"   :[{"ammo": "bolts", "phy":15, "magic":20, "holy": 0, "elemental":30, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
-        "Hand Ballista"         :[{"ammo": "bolts", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
-        "Rapidfire Repeater"    :[{"ammo": "bolts", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}]
+        "Crossbow"              :[{"wep_id":"22000", "ammo": "bolts", "phy": 5, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Uncommon"}],
+        "Mounted Crossbow"      :[{"wep_id":"22001", "ammo": "bolts", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Rare"}],
+        "Draconian Pulleybow"   :[{"wep_id":"22002", "ammo": "bolts", "phy":15, "magic":20, "holy": 0, "elemental":30, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Legendary"}],
+        "Hand Ballista"         :[{"wep_id":"22003", "ammo": "bolts", "phy":10, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}],
+        "Rapidfire Repeater"    :[{"wep_id":"22004", "ammo": "bolts", "phy":20, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 0, "rarity": "Epic"}]
     }
 }

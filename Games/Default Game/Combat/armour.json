@@ -4,7 +4,7 @@
         "Leather Armour"            :[{"wep_id":"10000", "phy": 30, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
         "Chainmail Armour"          :[{"wep_id":"10001", "phy": 45, "magic":  0, "holy": 10, "elemental":  5, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
         "Cast Iron Set"             :[{"wep_id":"10002", "phy": 40, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
-        "Wrought Iron Set"          :[{"wep_id":"10003", "phy": 50, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
+        "Wrought Iron Set"          :[{"wep_id":"10003", "phy": 50, "magic":  0, "holy":  0, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard": 50, "rarity": "Uncommon"}],
         "Alloyed Set"               :[{"wep_id":"10004", "phy": 20, "magic": 30, "holy": 20, "elemental":  0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
         "Castle Guard Set"          :[{"wep_id":"10005", "phy": 45, "magic": 10, "holy":  0, "elemental":  0, "slash": 1, "pierce": 1, "bludgeon": 1, "guard": 50, "rarity": "Rare"}],
         "Elven Armour"              :[{"wep_id":"10006", "phy": 10, "magic": 50, "holy": 60, "elemental": 10, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],

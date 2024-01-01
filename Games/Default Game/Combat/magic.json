@@ -23,7 +23,7 @@
     "Wands":
     {
         "Wand"                          :[{"wep_id":"41000", "phy": 0, "magic": 50, "elemental": 30, "guard":  0, "boost":    "Nature", "allowed": ["Nature"],                      "rarity": "Common"}],
-        "Ashem Greatwand"               :[{"wep_id":"41001", "phy": 0, "magic": 56, "elemental": 35, "guard":  3, "boost":      "Fire", "allowed": ["Fire"],                        "rarity": "Uncommon"}],              
+        "Ashen Greatwand"               :[{"wep_id":"41001", "phy": 0, "magic": 56, "elemental": 35, "guard":  3, "boost":      "Fire", "allowed": ["Fire"],                        "rarity": "Uncommon"}],              
         "Burnt Ironwood Wand"           :[{"wep_id":"41002", "phy": 2, "magic": 50, "elemental": 40, "guard":  6, "boost":      "Fire", "allowed": ["Fire"],                        "rarity": "Uncommon"}],
         "Soulstice Wand"                :[{"wep_id":"41003", "phy": 2, "magic": 60, "elemental": 40, "guard": 12, "boost":      "Holy", "allowed": ["Holy"],                        "rarity": "Rare"}],
         "Crystal Lightwand"             :[{"wep_id":"41004", "phy": 0, "magic": 75, "elemental": 20, "guard":  0, "boost":    "Energy", "allowed": ["Energy"],                      "rarity": "Rare"}],

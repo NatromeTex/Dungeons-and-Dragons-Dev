@@ -966,14 +966,14 @@
         {
             "Potions": 
             [
-                {"name": "Healing Brew", "quantity": 2, "level": 2},
-                {"name": "Archane Brew", "quantity": 3, "level": 1}
+                {"name": "Healing Brew", "quantity": 2, "level": 1},
+                {"name": "Archane Brew", "quantity": 2, "level": 2}
             ],
             
             "Weapons": 
             [
-                {"name": "Academy Seal", "level": 1},
-                {"name": "Steel Shortsword", "level": 1}
+                {"name": "Academy Stadd", "level": 1},
+                {"name": "Steel Sabre", "level": 1}
             ],
             "Armour": 
             [
@@ -981,8 +981,7 @@
             ],
             "Munitions":
             [
-                {"name": "Healing Herb", "quantity": 3},
-                {"name": "Pouch of Gunpowder", "quantity": 4}
+                {"name": "Healing Rocks", "quantity": 3}
             ],
             "Currency":
             [
@@ -995,26 +994,26 @@
             "Potions": 
             [
                 {"name": "Healing Brew", "quantity": 1, "level": 1},
-                {"name": "Archane Brew", "quantity": 2, "level": 1}
+                {"name": "Archane Brew", "quantity": 3, "level": 1}
             ],
             
             "Weapons": 
             [
-                {"name": "Wooden Club", "level": 1},
+                {"name": "Warlock's Cane", "level": 1},
                 {"name": "Hunting Knife", "level": 1}
             ],
             "Armour": 
             [
-                {"name": "Leather Armour", "level": 1}
+                {"name": "Leather Armour", "level": 2}
             ],
             "Munitions":
-            [
-                {"name": "Tomahawk", "quantity": 3},
-                {"name": "Pouch of Gunpowder", "quantity": 4}
+            [            
+                {"name": "Pouch of Gunpowder", "quantity": 4},
+                {"name": "Healing Herb", "quantity": 3}
             ],
             "Currency":
             [
-                {"name": "Copper", "quantity": 500},
+                {"name": "Copper", "quantity": 200},
                 {"name": "Silver", "quantity": 20}
             ]
         },
@@ -1022,28 +1021,29 @@
         {
             "Potions": 
             [
-                {"name": "Healing Brew", "quantity": 1, "level": 1},
+                {"name": "Healing Brew", "quantity": 1, "level": 2},
                 {"name": "Archane Brew", "quantity": 2, "level": 1}
             ],
             
             "Weapons": 
             [
-                {"name": "Wooden Club", "level": 1},
-                {"name": "Hunting Knife", "level": 1}
+                {"name": "Wand", "level": 2},
+                {"name": "Steel Shortsword", "level": 1}
             ],
             "Armour": 
             [
-                {"name": "Leather Armour", "level": 1}
+                {"name": "Cast Iron Set", "level": 1}
             ],
             "Munitions":
             [
-                {"name": "Tomahawk", "quantity": 3},
-                {"name": "Pouch of Gunpowder", "quantity": 4}
+                {"name": "Vial of Acid", "quantity": 3},
+                {"name": "Vial of Base", "quantity": 4}
             ],
             "Currency":
             [
-                {"name": "Copper", "quantity": 500},
-                {"name": "Silver", "quantity": 20}
+                {"name": "Copper", "quantity": 100},
+                {"name": "Silver", "quantity": 50},
+                {"name": "Electrum", "quantity": 20}
             ]
         }
     }

@@ -15,6 +15,7 @@ class GameGUI():
         self.mainmenu = MainMenu(self)
         self.options = OptionsMenu(self)
         self.credits = CreditsMenu(self)
+        self.exit = ExitMenu(self)
         self.currMenu = MainMenu(self)
 
     def checkEvent(self):
@@ -38,6 +39,9 @@ class GameGUI():
         textRect = textSurface.get_rect()
         textRect.center = (x,y)
         self.display.blit(textSurface,textRect)
+    
+    def drawRect(self, color, x1, y1, x2, y2):
+        pygame.draw.rect(self.window, color, pygame.Rect(x1, y1, x2, y2))
 
     def resetKeys(self):
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False

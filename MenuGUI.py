@@ -20,9 +20,10 @@ class MainMenu(Menu):
     def __init__(self, gui):
         Menu.__init__(self, gui)
         self.state = "Start"
-        self.startx, self.starty = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 150
-        self.optionsx, self.optionsy = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 250
-        self.creditsx, self.creditsy = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 350
+        self.startx, self.starty = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 200
+        self.optionsx, self.optionsy = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 300
+        self.creditsx, self.creditsy = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 400
+        self.exitx, self.exity = self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5 + 500
         self.cursorRect.midtop = (self.startx + self. offset, self.starty)
 
     def dispMenu(self):
@@ -35,6 +36,7 @@ class MainMenu(Menu):
             self.gui.drawText('Start Game', 50, self.startx, self.starty)
             self.gui.drawText('Options', 50, self.optionsx, self.optionsy)
             self.gui.drawText('Credits', 50, self.creditsx, self.creditsy)
+            self.gui.drawText('Exit', 50, self.exitx, self.exity)
             self.drawCursor()
             self.blitScreen()
 
@@ -47,35 +49,44 @@ class MainMenu(Menu):
                 self.cursorRect.midtop = (self.creditsx + self.offset, self.creditsy)
                 self.state = 'Credits'
             elif self.state == 'Credits':
+                self.cursorRect.midtop = (self.exitx + self.offset, self.exity)
+                self.state = 'Exit'
+            elif self.state == 'Exit':
                 self.cursorRect.midtop = (self.startx + self.offset, self.starty)
                 self.state = 'Start'
         if self.gui.UP_KEY:
             if self.state == 'Start':
-                self.cursorRect.midtop = (self.creditsx + self.offset, self.creditsy)
-                self.state = 'Credits'
+                self.cursorRect.midtop = (self.exitx + self.offset, self.exity)
+                self.state = 'Exit'
             elif self.state == 'Options':    
                 self.cursorRect.midtop = (self.startx + self.offset, self.starty)
                 self.state = 'Start'
             elif self.state == 'Credits':
                 self.cursorRect.midtop = (self.optionsx + self.offset, self.optionsy)
                 self.state = 'Options'
+            elif self.state == 'Exit':
+                self.cursorRect.midtop = (self.creditsx + self.offset, self.creditsy)
+                self.state = 'Credits'
     
     def checkIO(self):
         self.moveCursor()
-        if self.state == "Start":
-            self.gui.playing = True
-        elif self.state == "Options":
-            self.gui.currMenu = self.gui.options
-        elif self.state == "Credits":
-            self.gui.currMenu = self.gui.credits
-        self.runDisp = False
+        if self.gui.START_KEY:
+            if self.state == "Start":
+                self.gui.playing = True
+            elif self.state == "Options":
+                self.gui.currMenu = self.gui.options
+            elif self.state == "Credits":
+                self.gui.currMenu = self.gui.credits
+            elif self.state == "Exit":
+                self.gui.currMenu = self.gui.exit
+            self.runDisp = False
 
 class OptionsMenu(Menu):
     def __init__(self, gui):
         Menu.__init__(self,gui)
         self.state = "Volume"
-        self.volx, self.voly = self.mid_w, self.mid_h - 200
-        self.controlsx, self.controlsy = self.mid_w, self.mid_h - 100
+        self.volx, self.voly = self.mid_w, self.mid_h - 400
+        self.controlsx, self.controlsy = self.mid_w, self.mid_h - 300
         self.cursorRect.midtop = (self.volx + self.offset, self.voly)
 
     def dispMenu(self):
@@ -97,16 +108,16 @@ class OptionsMenu(Menu):
         elif self.gui.UP_KEY or self.gui.DOWN_KEY:
             if self.state == "Volume":
                 self.state = "Controls"
-                self.cursorRect.midtop = (self.controlsx - self.offset, self.controlsy)
+                self.cursorRect.midtop = (self.controlsx + self.offset, self.controlsy)
             elif self.state == "Controls":
                 self.state = "Volume"
-                self.cursorRect.midtop = (self.volx - self.offset, self.voly)                 
+                self.cursorRect.midtop = (self.volx + self.offset, self.voly)                 
         elif self.gui.START_KEY:
             pass
 
 class CreditsMenu(Menu):
     def __init__(self, gui):
-        Menu.__init__(self,gui)
+        Menu.__init__(self, gui)
 
     def dispMenu(self):
         self.runDisp = True
@@ -116,6 +127,26 @@ class CreditsMenu(Menu):
                 self.gui.currMenu = self.gui.mainmenu
                 self.runDisp = False
             self.gui.display.fill(self.gui.BLACK)
-            self.gui.drawText("Credits", 70, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/4)
-            self.gui.drawText("All coding by Natrome Tex", 60, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/2)
+            self.gui.drawText('Credits', 70, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 4)
+            self.gui.drawText('Coding By Natrome Tex', 50, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 2)
             self.blitScreen()
+
+class ExitMenu(Menu):
+    def __init__(self, gui):
+        Menu.__init__(self,gui)
+    
+    def dispMenu(self):
+        self.runDisp = True
+        self.gui.drawRect(self.gui.WHITE, self.mid_w - 500, self.mid_h - 600, 1000, 500)
+        self.gui.drawRect(self.gui.BLACK, self.mid_w - 496, self.mid_h - 596, 992, 492)
+        pygame.display.flip()
+        while self.runDisp:
+            self.gui.checkEvent()
+            if self.gui.START_KEY or self.gui.BACK_KEY:
+                self.gui.currMenu = self.gui.mainmenu
+                self.runDisp = False
+            
+            self.gui.drawText('Do you really want to quit?', 40, self.mid_w, self.mid_h - 546)
+            
+            self.blitScreen()
+            self.gui.resetKeys()

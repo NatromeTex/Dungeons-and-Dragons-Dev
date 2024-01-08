@@ -6,7 +6,7 @@ class GameGUI():
         pygame.init()
         self.running = True
         self.playing = False
-        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY = False, False, False,False
+        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY = False, False, False, False, False, False
         self.DISPLAY_W, self.DISPLAY_H = 1920, 1080
         self.display = pygame.Surface((self.DISPLAY_W,self.DISPLAY_H))
         self.window = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
@@ -32,6 +32,10 @@ class GameGUI():
                     self.UP_KEY = True
                 if event.key == pygame.K_DOWN:
                     self.DOWN_KEY = True
+                if event.key == pygame.K_LEFT:
+                    self.LEFT_KEY = True
+                if event.key == pygame.K_RIGHT:
+                    self.RIGHT_KEY = True
     
     def drawText(self, text, size, x, y):
         font = pygame.font.Font(self.font_name, size)
@@ -44,5 +48,5 @@ class GameGUI():
         pygame.draw.rect(self.window, color, pygame.Rect(x1, y1, x2, y2))
 
     def resetKeys(self):
-        self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
+        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY = False, False, False, False, False, False
             

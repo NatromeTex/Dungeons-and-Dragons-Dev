@@ -134,19 +134,36 @@ class CreditsMenu(Menu):
 class ExitMenu(Menu):
     def __init__(self, gui):
         Menu.__init__(self,gui)
+        self.state = "Yes"
+        self.yesx, self.yesy = self.mid_w - 200, self.mid_h - 350
+        self.nox, self.noy = self.mid_w + 200, self.mid_h - 350
+        self.cursorRect.midtop = (self.yesx -100, self.yesy)
     
     def dispMenu(self):
         self.runDisp = True
-        self.gui.drawRect(self.gui.WHITE, self.mid_w - 500, self.mid_h - 600, 1000, 500)
-        self.gui.drawRect(self.gui.BLACK, self.mid_w - 496, self.mid_h - 596, 992, 492)
-        pygame.display.flip()
         while self.runDisp:
             self.gui.checkEvent()
-            if self.gui.START_KEY or self.gui.BACK_KEY:
-                self.gui.currMenu = self.gui.mainmenu
-                self.runDisp = False
-            
-            self.gui.drawText('Do you really want to quit?', 40, self.mid_w, self.mid_h - 546)
-            
+            self.checkIO()
+            self.gui.display.fill(self.gui.BLACK)
+            self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
+            self.gui.drawText('Do you really want to quit?', 55, self.mid_w, self.mid_h - 546)
+            self.gui.drawText('Yes', 40, self.yesx, self.yesy)
+            self.gui.drawText('No', 40, self.nox, self.noy)
+            self.drawCursor()
             self.blitScreen()
             self.gui.resetKeys()
+
+    def checkIO(self):
+        if self.gui.BACK_KEY or self.state == 'No' and self.gui.START_KEY:
+            self.gui.currMenu = self.gui.mainmenu
+            self.runDisp = False
+        elif self.gui.RIGHT_KEY or self.gui.LEFT_KEY:
+            if self.state == "Yes":
+                self.state = "No"
+                self.cursorRect.midtop = (self.nox - 100, self.noy)
+            elif self.state == "No":
+                self.state = "Yes"
+                self.cursorRect.midtop = (self.yesx - 100, self.yesy)                 
+        elif self.state == 'Yes' and self.gui.START_KEY:
+            self.gui.running, self.gui.playing = False, False
+            self.runDisp = False

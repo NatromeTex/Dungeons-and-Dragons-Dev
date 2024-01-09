@@ -72,7 +72,7 @@ class MainMenu(Menu):
         self.moveCursor()
         if self.gui.START_KEY:
             if self.state == "Start":
-                self.gui.playing = True
+                self.gui.currMenu = self.gui.start
             elif self.state == "Options":
                 self.gui.currMenu = self.gui.options
             elif self.state == "Credits":
@@ -80,6 +80,36 @@ class MainMenu(Menu):
             elif self.state == "Exit":
                 self.gui.currMenu = self.gui.exit
             self.runDisp = False
+
+class StartGame(Menu):
+    def __init__(self, gui):
+        Menu.__init__(self, gui)
+        self.state = "SelGame"
+        self.selGamex, self.selGamey = self.mid_w - 300, self.mid_h/4 + 200
+        self.selCharx, self.selChary = self.mid_w - 300, self.mid_h/4 + 400
+        self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
+        self.gamePath = self.gui.getGamePath()
+        self.gameName = self.gui.getGameName(self.gamePath)
+        
+    
+    def dispMenu(self):
+        self.runDisp = True
+        while self.runDisp:
+            self.gui.checkEvent()
+            self.checkIO()
+            self.gui.display.fill(self.gui.BLACK)
+            self.gui.drawText('Start Game', 60, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/4)
+            self.gui.drawText('Selected Game:', 50, self.selGamex, self.selGamey)
+            self.gui.drawText(self.gameName, 50, self.selGamex + 400, self.selGamey)
+            self.drawCursor()
+            self.blitScreen()
+
+    def checkIO(self):
+        if self.gui.BACK_KEY:
+            self.gui.currMenu = self.gui.mainmenu
+            self.runDisp = False
+        if self.state == 'SelGame':
+            pass 
 
 class OptionsMenu(Menu):
     def __init__(self, gui):

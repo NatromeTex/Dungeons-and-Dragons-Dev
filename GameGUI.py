@@ -1,4 +1,5 @@
 import pygame
+import configparser
 from MenuGUI import *
 
 class GameGUI():
@@ -13,6 +14,7 @@ class GameGUI():
         self.font_name = "BreatheFire.ttf"
         self.BLACK, self.WHITE = (0,0,0),(255,255,255)
         self.mainmenu = MainMenu(self)
+        self.start = StartGame(self)
         self.options = OptionsMenu(self)
         self.credits = CreditsMenu(self)
         self.exit = ExitMenu(self)
@@ -49,4 +51,20 @@ class GameGUI():
 
     def resetKeys(self):
         self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY = False, False, False, False, False, False
+
+    def setGamePath(self, path):
+        config = configparser.ConfigParser()
+        config['GAME'] = {'selected_game_path': path}
+        with open('config.ini', 'w') as configfile:
+            config.write(configfile)
+    
+    def getGamePath(self):
+        config = configparser.ConfigParser()
+        config.read('config.ini')
+        return config['GAME'].get('selected_game_path', '')
+    
+    def getGameName(self, name):
+        if name == 'Games\Default Game':
+            return 'Default Game'
+
             

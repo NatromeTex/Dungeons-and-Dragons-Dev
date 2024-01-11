@@ -21,7 +21,7 @@ def ag_es(amt):
 def ag_au(amt):
     return amt / 10
 def ag_pt(amt):
-    return amt / 100
+    return amt / 1000
 
 def es_cu(amt):
     return amt * 50

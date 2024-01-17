@@ -90,6 +90,8 @@ class StartGame(Menu):
         self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
         self.gamePath = self.gui.getGamePath()
         self.gameName = self.gui.getGameName(self.gamePath)
+        self.index = 0
+        self.charName = self.gui.getCharName("Current Games",self.index)
         
     
     def dispMenu(self):
@@ -108,8 +110,14 @@ class StartGame(Menu):
         if self.gui.BACK_KEY:
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
-        if self.state == 'SelGame':
-            pass 
+        elif self.gui.UP_KEY or self.gui.DOWN_KEY:
+            if self.state == "SelGame":
+                self.state = "SelChar"
+                self.cursorRect.midtop = (self.selCharx + self.offset/1.5, self.selChary)
+            if self.state == "SelChar":
+                self.state = "SelGame"
+                self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
+
 
 class OptionsMenu(Menu):
     def __init__(self, gui):

@@ -66,5 +66,13 @@ class GameGUI():
     def getGameName(self, name):
         if name == 'Games\Default Game':
             return 'Default Game'
+    
+    def getCharName(self,dic,ind):
+        files = [file for file in os.listdir(dic) if file.endswith(".json")]
+        names = []
+        for json_file in json_files:
+            name = json_file.split("_")[0]
+            names.append(name)
+        return names[ind], len(names)     
 
             

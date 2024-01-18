@@ -117,6 +117,12 @@ class StartGame(Menu):
             if self.state == "SelChar":
                 self.state = "SelGame"
                 self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
+        elif self.gui.LEFT_KEY:
+            if self.state == "SelGame":
+                pass
+            if self.state == "SelChar":
+                self.index = self.index - 1
+                self.charName = self.gui.getCharName("Current Games",self.index)
 
 
 class OptionsMenu(Menu):

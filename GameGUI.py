@@ -73,6 +73,7 @@ class GameGUI():
         for json_file in json_files:
             name = json_file.split("_")[0]
             names.append(name)
-        return names[ind], len(names)     
+        ind = ind % len(names)
+        return names[ind]    
 
             

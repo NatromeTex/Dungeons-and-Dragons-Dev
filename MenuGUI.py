@@ -86,12 +86,12 @@ class StartGame(Menu):
         Menu.__init__(self, gui)
         self.state = "SelGame"
         self.selGamex, self.selGamey = self.mid_w - 300, self.mid_h/4 + 200
-        self.selCharx, self.selChary = self.mid_w - 300, self.mid_h/4 + 400
-        self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
+        self.selCharx, self.selChary = self.mid_w - 250, self.mid_h/4 + 400
+        self.cursorRect.midtop = (self.selGamex + self.offset, self.selGamey)
         self.gamePath = self.gui.getGamePath()
         self.gameName = self.gui.getGameName(self.gamePath)
         self.index = 0
-        self.charName = self.gui.getCharName("Current Games",self.index)
+        self.charName = self.gui.getCharName("Current Games\Characters", self.index)
         
     
     def dispMenu(self):
@@ -103,6 +103,8 @@ class StartGame(Menu):
             self.gui.drawText('Start Game', 60, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/4)
             self.gui.drawText('Selected Game:', 50, self.selGamex, self.selGamey)
             self.gui.drawText(self.gameName, 50, self.selGamex + 400, self.selGamey)
+            self.gui.drawText('Selected Character:', 50, self.selCharx, self.selChary)
+            self.gui.drawText(self.charName, 50, self.selCharx + 350, self.selChary)
             self.drawCursor()
             self.blitScreen()
 
@@ -113,17 +115,12 @@ class StartGame(Menu):
         elif self.gui.UP_KEY or self.gui.DOWN_KEY:
             if self.state == "SelGame":
                 self.state = "SelChar"
-                self.cursorRect.midtop = (self.selCharx + self.offset/1.5, self.selChary)
-            if self.state == "SelChar":
+                self.cursorRect.midtop = (self.selCharx + self.offset, self.selChary)
+            elif self.state == "SelChar":
                 self.state = "SelGame"
-                self.cursorRect.midtop = (self.selGamex + self.offset/1.5, self.selGamey)
-        elif self.gui.LEFT_KEY:
-            if self.state == "SelGame":
-                pass
-            if self.state == "SelChar":
-                self.index = self.index - 1
-                self.charName = self.gui.getCharName("Current Games",self.index)
-
+                self.cursorRect.midtop = (self.selGamex + self.offset, self.selGamey)                 
+        elif self.gui.START_KEY:
+            pass
 
 class OptionsMenu(Menu):
     def __init__(self, gui):

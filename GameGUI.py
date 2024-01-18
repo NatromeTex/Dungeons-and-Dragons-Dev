@@ -1,6 +1,7 @@
 import pygame
 import configparser
 from MenuGUI import *
+import os
 
 class GameGUI():
     def __init__(self):
@@ -70,10 +71,13 @@ class GameGUI():
     def getCharName(self,dic,ind):
         files = [file for file in os.listdir(dic) if file.endswith(".json")]
         names = []
-        for json_file in json_files:
-            name = json_file.split("_")[0]
+        for file in files:
+            name = file.split("_")[0]
             names.append(name)
-        ind = ind % len(names)
-        return names[ind]    
+        if ind == 0:
+            return names[0]
+        else:    
+            ind = ind % len(names)
+            return names[ind]    
 
             

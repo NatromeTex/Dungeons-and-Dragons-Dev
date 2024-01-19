@@ -36,13 +36,13 @@
     },
     "Seals":
     {
-        "Academy Seal"                  :[{"wep_id":"42000", "phy":5, "magic": 25, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Uncommon"}],
-        "Hearthstone Seal"              :[{"wep_id":"42001", "phy":5, "magic": 30, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
-        "Arachne's Heart"               :[{"wep_id":"42002", "phy":5, "magic": 40, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Mythic"}],
-        "Six Pointed Snowflake"         :[{"wep_id":"42003", "phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
-        "Blank Scroll"                  :[{"wep_id":"42004", "phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
-        "Unblinking Eye"                :[{"wep_id":"42005", "phy":5, "magic": 60, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
-        "Forging Hammer"                :[{"wep_id":"42006", "phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
-        "Dragonclaw Seal"               :[{"wep_id":"42007", "phy":5, "magic": 55, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":["Holy","Fire"], "rarity": "Mythic"}]
+        "Academy Seal"                  :[{"wep_id":"42000", "phy": 5, "magic": 25, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Uncommon"}],
+        "Hearthstone Seal"              :[{"wep_id":"42001", "phy": 5, "magic": 30, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Arachne's Heart"               :[{"wep_id":"42002", "phy": 5, "magic": 40, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":"Terror",        "rarity": "Mythic"}],
+        "Six Pointed Snowflake"         :[{"wep_id":"42003", "phy": 5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Blank Scroll"                  :[{"wep_id":"42004", "phy": 5, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Unblinking Eye"                :[{"wep_id":"42005", "phy": 5, "magic": 60, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Forging Hammer"                :[{"wep_id":"42006", "phy":50, "magic": 55, "elemental": 30, "guard": 20, "boost":   "Holy", "allowed":  "Holy",        "rarity": "Mythic"}],
+        "Dragonclaw Seal"               :[{"wep_id":"42007", "phy": 5, "magic": 55, "elemental": 30, "guard": 20, "boost": "Terror", "allowed":["Holy","Fire"], "rarity": "Mythic"}]
     }
 }

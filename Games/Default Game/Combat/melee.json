@@ -5,7 +5,7 @@
         "Zweihander"            :[{"wep_id":"50001", "phy":132, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
         "Odachi"                :[{"wep_id":"50002", "phy": 98, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Epic"}],
         "Spatha"                :[{"wep_id":"50003", "phy":105, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Uncommon"}],
-        "Han Jian"              :[{"wep_id":"50004", "phy": 95, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 70, "rarity": "Rare"}],
+        "Jian"                  :[{"wep_id":"50004", "phy": 95, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 70, "rarity": "Rare"}],
         "English Longsword"     :[{"wep_id":"50005", "phy":110, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Common"}],
         "Damascus Longsword"    :[{"wep_id":"50006", "phy":100, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 50, "rarity": "Rare"}],
         "Greatsword"            :[{"wep_id":"50007", "phy":175, "magic":0, "holy":0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":100, "rarity": "Mythic"}] 

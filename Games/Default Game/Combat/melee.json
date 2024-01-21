@@ -16,7 +16,7 @@
         "Halberd"               :[{"wep_id":"51001", "phy":130, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Uncommon"}],
         "Golden Halberd"        :[{"wep_id":"51002", "phy":120, "magic": 0, "holy":25, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":75, "rarity": "Legendary"}],
         "Viking Broadaxe"       :[{"wep_id":"51003", "phy":150, "magic": 0, "holy": 0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":80, "rarity": "Rare"}],
-        "Angle Wings Axe"       :[{"wep_id":"51004", "phy":220, "magic": 0, "holy":50, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":50, "rarity": "Mythic"}],
+        "Angel Wings Axe"       :[{"wep_id":"51004", "phy":220, "magic": 0, "holy":50, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":50, "rarity": "Mythic"}],
         "Spring Loaded Hatchet" :[{"wep_id":"51005", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Epic"}],
         "Sulpher Tip Axe"       :[{"wep_id":"51006", "phy": 35, "magic": 0, "holy": 0, "elemental":30, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":30, "rarity": "Common"}]
     },

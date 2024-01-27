@@ -61,6 +61,9 @@ def forex(amt,cur):
         return amt - 10
     elif cur == "pp":
         return amt - 5
+def trades(amt,cur):
+    if cut >= 100:
+       pass
 
 
 

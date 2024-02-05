@@ -78,9 +78,6 @@ class GameGUI():
             return names[0]
         else:    
             ind = ind % len(names)
-            return names[ind]
-
-if a == 3:
-  pass    
+            return names[ind]   
 
             

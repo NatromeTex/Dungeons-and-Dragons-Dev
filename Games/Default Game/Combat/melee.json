@@ -38,7 +38,7 @@
         "Dao"                   :[{"wep_id":"52013", "phy": 50, "magic":13, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
         "Cutlass"               :[{"wep_id":"52014", "phy": 75, "magic": 0, "holy": 0, "elemental": 5, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Rare"}],
         "Scimitar"              :[{"wep_id":"52015", "phy": 55, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard":50, "rarity": "Epic"}],
-        "ShadowHunter"          :[{"wep_id":"52016", "phy":145, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
+        "ShadowHunter"          :[{"wep_id":"52016", "phy":125, "magic": 0, "holy":50, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":80, "rarity": "Mythic"}],
         "Crystal Sword"         :[{"wep_id":"52017", "phy": 75, "magic":60, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":75, "rarity": "Legendary"}]
     },
     "Daggers":

@@ -54,7 +54,7 @@ class MainMenu(Menu):
             elif self.state == 'Exit':
                 self.cursorRect.midtop = (self.startx + self.offset, self.starty)
                 self.state = 'Start'
-        if self.gui.UP_KEY:
+        elif self.gui.UP_KEY:
             if self.state == 'Start':
                 self.cursorRect.midtop = (self.exitx + self.offset, self.exity)
                 self.state = 'Exit'
@@ -67,6 +67,9 @@ class MainMenu(Menu):
             elif self.state == 'Exit':
                 self.cursorRect.midtop = (self.creditsx + self.offset, self.creditsy)
                 self.state = 'Credits'
+        elif self.gui.BACK_KEY:
+            self.gui.currMenu = self.gui.exit
+            self.runDisp = False     
     
     def checkIO(self):
         self.moveCursor()
@@ -125,7 +128,7 @@ class StartGame(Menu):
 class OptionsMenu(Menu):
     def __init__(self, gui):
         Menu.__init__(self,gui)
-        self.state = "Volume"
+        self.state = "Graphics"
         self.graphx, self.graphy = self.mid_w, self.mid_h - 400
         self.controlsx, self.controlsy = self.mid_w, self.mid_h - 300
         self.volx, self.voly = self.mid_w, self.mid_h - 200
@@ -148,7 +151,7 @@ class OptionsMenu(Menu):
         if self.gui.BACK_KEY:
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
-        elif self.gui.DOWN_KEY:
+        elif self.gui.UP_KEY:
             if self.state == "Graphics":
                 self.state = "Sounds"
                 self.cursorRect.midtop = (self.volx + self.offset, self.voly)
@@ -158,10 +161,10 @@ class OptionsMenu(Menu):
             elif self.state == "Controls":
                 self.state = "Graphics"
                 self.cursorRect.midtop = (self.graphx + self.offset, self.graphy)                 
-        elif self.gui.UP_KEY:
+        elif self.gui.DOWN_KEY:
             if self.state == "Graphics":
                 self.state = "Controls"
-                self.cursorRect.midtop = (self.controls + self.offset, self.controlsy)
+                self.cursorRect.midtop = (self.controlsx + self.offset, self.controlsy)
             elif self.state == "Sounds":
                 self.state = "Graphics"
                 self.cursorRect.midtop = (self.graphx + self.offset, self.graphy)

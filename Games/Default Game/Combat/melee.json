@@ -45,7 +45,7 @@
     {
         "Steel Karambit"        :[{"wep_id":"53000", "phy": 30, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Uncommon"}],
         "Copper Blade"          :[{"wep_id":"53001", "phy": 18, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 0, "bludgeon": 0, "guard": 3, "rarity": "Common"}],
-        "Naval Bowie"           :[{"wep_id":"53002", "phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
+        "Steel Dagger"          :[{"wep_id":"53002", "phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Unommon"}],
         "Qatar"                 :[{"wep_id":"53003", "phy": 25, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 8, "rarity": "Rare"}],
         "Hunting Knife"         :[{"wep_id":"53004", "phy": 15, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":10, "rarity": "Common"}],
         "Cold Steel Tanto"      :[{"wep_id":"53005", "phy": 35, "magic": 0, "holy": 0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard": 5, "rarity": "Rare"}],

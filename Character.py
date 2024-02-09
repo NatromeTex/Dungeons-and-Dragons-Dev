@@ -77,7 +77,7 @@ class DnDCharacter:
             "Level"         : self.level
         }
         save_directory = 'Current Games/Characters/'
-        filename = f"{self.name}_character.json"
+        filename = f"{self.name}.json"
         full_path = os.path.join(save_directory, filename)
 
         os.makedirs(save_directory, exist_ok=True)                           # Create directory if it doesn't exist

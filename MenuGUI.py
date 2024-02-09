@@ -129,7 +129,21 @@ class StartGame(Menu):
                 self.cursorRect.midtop = (self.selCharx + self.offset, self.selChary)
             elif self.state == "SelChar":
                 self.state = "SelGame"
-                self.cursorRect.midtop = (self.selGamex + self.offset, self.selGamey)                 
+                self.cursorRect.midtop = (self.selGamex + self.offset, self.selGamey) 
+        elif self.gui.LEFT_KEY:
+            if self.state == 'SelGame':
+                pass
+            elif self.state == 'SelChar':
+                self.index -= 1
+                self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
+                print(self.charName)
+        elif self.gui.RIGHT_KEY:
+            if self.state == 'SelGame':
+                pass
+            elif self.state == 'SelChar':
+                self.index += 1
+                self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
+                print(self.charName)              
         elif self.gui.START_KEY:
             pass
 
@@ -242,3 +256,12 @@ class ExitMenu(Menu):
         elif self.state == 'Yes' and self.gui.START_KEY:
             self.gui.running, self.gui.playing = False, False
             self.runDisp = False
+
+class CreateChar(Menu):
+    def __init__(self, gui):
+        Menu.__init__(self,gui)
+        self.state = "Gender"
+        self.genderx, self.gendery = self.mid_w - 500, self.mid_h - 450
+        self.Classx, self.Classy = self.mid_w + 500, self.mid_h - 350
+        self.
+        self.cursorRect.midtop = (self.yesx -100, self.yesy)

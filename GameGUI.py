@@ -71,9 +71,9 @@ class GameGUI():
     
     def getCharName(self,dic,ind):
         files = [file for file in os.listdir(dic) if file.endswith(".json")]
-        names = []
+        names = ['                  <Create Character>']
         for file in files:
-            name = file.split("_")[0]
+            name = file.split(".")[0]
             names.append(name)
         if ind == 0:
             return names[0]

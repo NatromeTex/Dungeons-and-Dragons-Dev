@@ -15,6 +15,10 @@ class Menu():
         self.gui.window.blit(self.gui.display, (0, 0))
         pygame.display.update()
         self.gui.resetKeys()
+    
+    def showFps(self):
+        fps = str(int(self.gui.clock.get_fps()))
+        self.gui.drawText(fps, 20, 10, 10)
 
 class MainMenu(Menu):
     def __init__(self, gui):
@@ -32,6 +36,7 @@ class MainMenu(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
+            self.showFps()
             self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
             self.gui.drawText('Start Game', 50, self.startx, self.starty)
             self.gui.drawText('Options', 50, self.optionsx, self.optionsy)
@@ -39,6 +44,7 @@ class MainMenu(Menu):
             self.gui.drawText('Exit', 50, self.exitx, self.exity)
             self.drawCursor()
             self.blitScreen()
+            self.gui.clock.tick(144)
 
     def moveCursor(self):
         if self.gui.DOWN_KEY:
@@ -94,7 +100,7 @@ class StartGame(Menu):
         self.gamePath = self.gui.getGamePath()
         self.gameName = self.gui.getGameName(self.gamePath)
         self.index = 0
-        self.charName = self.gui.getCharName("Current Games\Characters", self.index)
+        self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
         
     
     def dispMenu(self):
@@ -103,6 +109,7 @@ class StartGame(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
+            self.showFps()
             self.gui.drawText('Start Game', 60, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/4)
             self.gui.drawText('Selected Game:', 50, self.selGamex, self.selGamey)
             self.gui.drawText(self.gameName, 50, self.selGamex + 400, self.selGamey)
@@ -110,6 +117,7 @@ class StartGame(Menu):
             self.gui.drawText(self.charName, 50, self.selCharx + 350, self.selChary)
             self.drawCursor()
             self.blitScreen()
+            self.gui.clock.tick(144)
 
     def checkIO(self):
         if self.gui.BACK_KEY:
@@ -140,12 +148,14 @@ class OptionsMenu(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
+            self.showFps()
             self.gui.drawText("Options", 70, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 4)
             self.gui.drawText("Graphics", 50, self.graphx, self.graphy)
             self.gui.drawText("Sounds", 50, self.volx, self.voly)
             self.gui.drawText("Controls", 50, self.controlsx, self.controlsy)
             self.drawCursor()
             self.blitScreen()
+            self.gui.clock.tick(144)
     
     def checkIO(self):
         if self.gui.BACK_KEY:
@@ -186,9 +196,11 @@ class CreditsMenu(Menu):
                 self.gui.currMenu = self.gui.mainmenu
                 self.runDisp = False
             self.gui.display.fill(self.gui.BLACK)
+            self.showFps()
             self.gui.drawText('Credits', 70, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 4)
             self.gui.drawText('Coding By Natrome Tex', 50, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 2)
             self.blitScreen()
+            self.gui.clock.tick(144)
 
 class ExitMenu(Menu):
     def __init__(self, gui):
@@ -203,7 +215,9 @@ class ExitMenu(Menu):
         while self.runDisp:
             self.gui.checkEvent()
             self.checkIO()
+            self.showFps()
             self.gui.display.fill(self.gui.BLACK)
+            self.showFps()
             self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
             self.gui.drawText('Do you really want to quit?', 55, self.mid_w, self.mid_h - 546)
             self.gui.drawText('Yes', 40, self.yesx, self.yesy)
@@ -211,6 +225,8 @@ class ExitMenu(Menu):
             self.drawCursor()
             self.blitScreen()
             self.gui.resetKeys()
+            self.gui.clock.tick(144)
+            
 
     def checkIO(self):
         if self.gui.BACK_KEY or self.state == 'No' and self.gui.START_KEY:

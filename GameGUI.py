@@ -13,6 +13,7 @@ class GameGUI():
         self.display = pygame.Surface((self.DISPLAY_W,self.DISPLAY_H))
         self.window = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
         self.font_name = "BreatheFire.ttf"
+        self.clock = pygame.time.Clock()
         self.BLACK, self.WHITE = (0,0,0),(255,255,255)
         self.mainmenu = MainMenu(self)
         self.start = StartGame(self)
@@ -65,7 +66,7 @@ class GameGUI():
         return config['GAME'].get('selected_game_path', '')
     
     def getGameName(self, name):
-        if name == 'Games\Default Game':
+        if name == 'Games\\Default Game':
             return 'Default Game'
     
     def getCharName(self,dic,ind):

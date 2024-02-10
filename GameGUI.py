@@ -2,6 +2,7 @@ import pygame
 import configparser
 from MenuGUI import *
 import os
+import json
 
 class GameGUI():
     def __init__(self):
@@ -20,6 +21,7 @@ class GameGUI():
         self.options = OptionsMenu(self)
         self.credits = CreditsMenu(self)
         self.exit = ExitMenu(self)
+        self.create = CreateChar(self)
         self.currMenu = MainMenu(self)
 
     def checkEvent(self):
@@ -79,6 +81,30 @@ class GameGUI():
             return names[0]
         else:    
             ind = ind % len(names)
-            return names[ind]   
+            return names[ind]
 
+    def getRace(self, ind):
+        wd = f"Character/stat_modifiers.json"
+        game_path = self.getGamePath()
+        cgwd = os.path.join(game_path, wd)         # Loading the current game working directory
+        with open(cgwd) as file:
+            self.race = json.load(file)
+        races = list(self.race.keys())
+        if ind == 0:
+            return races[0]
+        else:
+            ind = ind%len(races)
+            return races[ind]
+    def getClass(self, ind):
+        wd = f"Character/stat_ranges.json"
+        game_path = self.getGamePath()
+        cgwd = os.path.join(game_path, wd)         # Loading the current game working directory
+        with open(cgwd) as file:
+            self.Class = json.load(file)
+        classes = list(self.Class.keys())
+        if ind == 0:
+            return classes[0]
+        else:
+            ind = ind%len(classes)
+            return classes[ind]
             

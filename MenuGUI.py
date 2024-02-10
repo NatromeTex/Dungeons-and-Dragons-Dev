@@ -36,13 +36,13 @@ class MainMenu(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
-            self.showFps()
             self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
             self.gui.drawText('Start Game', 50, self.startx, self.starty)
             self.gui.drawText('Options', 50, self.optionsx, self.optionsy)
             self.gui.drawText('Credits', 50, self.creditsx, self.creditsy)
             self.gui.drawText('Exit', 50, self.exitx, self.exity)
             self.drawCursor()
+            self.showFps()
             self.blitScreen()
             self.gui.clock.tick(144)
 
@@ -109,13 +109,13 @@ class StartGame(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
-            self.showFps()
             self.gui.drawText('Start Game', 60, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/4)
             self.gui.drawText('Selected Game:', 50, self.selGamex, self.selGamey)
             self.gui.drawText(self.gameName, 50, self.selGamex + 400, self.selGamey)
             self.gui.drawText('Selected Character:', 50, self.selCharx, self.selChary)
             self.gui.drawText(self.charName, 50, self.selCharx + 350, self.selChary)
             self.drawCursor()
+            self.showFps()
             self.blitScreen()
             self.gui.clock.tick(144)
 
@@ -145,7 +145,10 @@ class StartGame(Menu):
                 self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
                 print(self.charName)              
         elif self.gui.START_KEY:
-            pass
+            if self.state == 'SelChar' and self.charName == '                  <Create Character>':
+                self.gui.currMenu = self.gui.create
+                self.runDisp = False
+
 
 class OptionsMenu(Menu):
     def __init__(self, gui):
@@ -162,12 +165,12 @@ class OptionsMenu(Menu):
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
-            self.showFps()
             self.gui.drawText("Options", 70, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 4)
             self.gui.drawText("Graphics", 50, self.graphx, self.graphy)
             self.gui.drawText("Sounds", 50, self.volx, self.voly)
             self.gui.drawText("Controls", 50, self.controlsx, self.controlsy)
             self.drawCursor()
+            self.showFps()
             self.blitScreen()
             self.gui.clock.tick(144)
     
@@ -210,9 +213,9 @@ class CreditsMenu(Menu):
                 self.gui.currMenu = self.gui.mainmenu
                 self.runDisp = False
             self.gui.display.fill(self.gui.BLACK)
-            self.showFps()
             self.gui.drawText('Credits', 70, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 4)
             self.gui.drawText('Coding By Natrome Tex', 50, self.gui.DISPLAY_W / 2, self.gui.DISPLAY_H / 2)
+            self.showFps()
             self.blitScreen()
             self.gui.clock.tick(144)
 
@@ -231,12 +234,12 @@ class ExitMenu(Menu):
             self.checkIO()
             self.showFps()
             self.gui.display.fill(self.gui.BLACK)
-            self.showFps()
             self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
             self.gui.drawText('Do you really want to quit?', 55, self.mid_w, self.mid_h - 546)
             self.gui.drawText('Yes', 40, self.yesx, self.yesy)
             self.gui.drawText('No', 40, self.nox, self.noy)
             self.drawCursor()
+            self.showFps()
             self.blitScreen()
             self.gui.resetKeys()
             self.gui.clock.tick(144)
@@ -261,7 +264,79 @@ class CreateChar(Menu):
     def __init__(self, gui):
         Menu.__init__(self,gui)
         self.state = "Gender"
-        self.genderx, self.gendery = self.mid_w - 500, self.mid_h - 450
-        self.Classx, self.Classy = self.mid_w + 500, self.mid_h - 350
-        self.
-        self.cursorRect.midtop = (self.yesx -100, self.yesy)
+        self.genderx, self.gendery = self.mid_w - 500, self.mid_h - 650
+        self.classx, self.classy = self.mid_w - 500, self.mid_h - 550
+        self.racex, self. racey = self.mid_w - 500, self.mid_h - 450
+        self.raceIndex = 0
+        self.classIndex = 0
+        self.gender = 'Male'
+        self.clas = self.gui.getClass(self.classIndex)
+        self.race = self.gui.getRace(self.raceIndex)
+        self.cursorRect.midtop = (self.genderx -100, self.gendery)
+
+    def dispMenu(self):
+        self.gui.checkEvent()
+        self.checkIO()
+        self.showFps()
+        self.gui.display.fill(self.gui.BLACK)
+        self.gui.drawText('Character Creation', 50, self.mid_w, self.mid_w - 750)
+        self.gui.drawText('Gender: ', 50, self.genderx, self.gendery)
+        self.gui.drawText(self.gender, 50, self.genderx + 200, self.gendery)
+        self.gui.drawText('Class: ', 50, self.classx, self.classy)
+        self.gui.drawText(self.clas, 50, self.classx + 200, self.classy)
+        self.gui.drawText('Race: ', 50, self.racex, self.racey)
+        self.gui.drawText(self.race, 50, self.racex + 200, self.racey)
+        self.drawCursor()
+        self.showFps()
+        self.blitScreen()
+        self.gui.resetKeys()
+        self.gui.clock.tick(144)
+
+    def checkIO(self):
+        if self.gui.BACK_KEY:
+            self.gui.currMenu = self.gui.mainmenu
+            self.runDisp = False
+        elif self.gui.UP_KEY:
+            if self.state == 'Gender':
+                self.state = 'Race'
+                self.cursorRect.midtop = (self.racex - 100, self.racey)
+            elif self.state == 'Class':
+                self.state = 'Gender'
+                self.cursorRect.midtop = (self.genderx - 100, self.gendery)
+            elif self.state == 'Race':
+                self.state = 'Class'
+                self.cursorRect.midtop = (self.classx - 100, self.classy)
+        elif self.gui.DOWN_KEY:
+            if self.state == 'Gender':
+                self.state = 'Class'
+                self.cursorRect.midtop = (self.classx - 100, self.classy)
+            elif self.state == 'Class':
+                self.state = 'Race'
+                self.cursorRect.midtop = (self.racex - 100, self.racey)
+            elif self.state == 'Race':
+                self.state = 'Gender'
+                self.cursorRect.midtop = (self.genderx - 100, self.gendery) 
+        elif self.gui.RIGHT_KEY:
+            if self.state == 'Gender':
+                if self.gender == 'Male':
+                    self.gender = 'Female'
+                else:
+                    self.gender = 'Male'
+            elif self.state == 'Race':
+                self.raceIndex += 1
+                self.race = self.gui.getRace(self.raceIndex)
+            elif self.state == 'Class':
+                self.classIndex += 1
+                self.clas = self.gui.getClass(self.classIndex)
+        elif self.gui.LEFT_KEY:
+            if self.state == 'Gender':
+                if self.gender == 'Male':
+                    self.gender = 'Female'
+                else:
+                    self.gender = 'Male'
+            elif self.state == 'Race':
+                self.raceIndex -= 1
+                self.race = self.gui.getRace(self.raceIndex)
+            elif self.state == 'Class':
+                self.classIndex -= 1
+                self.clas = self.gui.getClass(self.classIndex)

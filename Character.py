@@ -1,7 +1,6 @@
 import json
 import random
 import os
-import Inventory
 import importlib
 import Menu
 
@@ -85,9 +84,3 @@ class DnDCharacter:
         with open(full_path, "w") as file:
             json.dump(character_data, file, indent=4)
         print(f"Character stats saved to {full_path}")
-
-    def init_loadout(self, character_class):                                 # Add the default loadouts for each characters per class              
-        character_class = self.character_class
-        inventory = Inventory(character_class)
-        inventory.initialize_inventory()
-        inventory.save_to_characters_json()

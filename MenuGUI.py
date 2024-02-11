@@ -1,4 +1,5 @@
 import pygame
+from GameGUI import DnDCharacter
 
 class Menu():
     def __init__(self, gui):
@@ -267,6 +268,7 @@ class CreateChar(Menu):
         self.genderx, self.gendery = self.mid_w - 500, self.mid_h - 650
         self.classx, self.classy = self.mid_w - 500, self.mid_h - 550
         self.racex, self. racey = self.mid_w - 500, self.mid_h - 450
+        self.charx, self.chary = self.mid_w, self.mid_h + 200
         self.raceIndex = 0
         self.classIndex = 0
         self.gender = 'Male'
@@ -286,6 +288,7 @@ class CreateChar(Menu):
         self.gui.drawText(self.clas, 50, self.classx + 200, self.classy)
         self.gui.drawText('Race: ', 50, self.racex, self.racey)
         self.gui.drawText(self.race, 50, self.racex + 200, self.racey)
+        self.gui.drawText('Create Character', 50, self.charx, self.chary)
         self.drawCursor()
         self.showFps()
         self.blitScreen()
@@ -298,14 +301,17 @@ class CreateChar(Menu):
             self.runDisp = False
         elif self.gui.UP_KEY:
             if self.state == 'Gender':
-                self.state = 'Race'
-                self.cursorRect.midtop = (self.racex - 100, self.racey)
+                self.state = 'Create'
+                self.cursorRect.midtop = (self.charx - 100, self.chary)
             elif self.state == 'Class':
                 self.state = 'Gender'
                 self.cursorRect.midtop = (self.genderx - 100, self.gendery)
             elif self.state == 'Race':
                 self.state = 'Class'
                 self.cursorRect.midtop = (self.classx - 100, self.classy)
+            elif self.state == 'Create':
+                self.state = 'Race'
+                self.cursorRect.midtop = (self.racex - 100, self.racey)
         elif self.gui.DOWN_KEY:
             if self.state == 'Gender':
                 self.state = 'Class'
@@ -314,6 +320,9 @@ class CreateChar(Menu):
                 self.state = 'Race'
                 self.cursorRect.midtop = (self.racex - 100, self.racey)
             elif self.state == 'Race':
+                self.state = 'Create'
+                self.cursorRect.midtop = (self.charx - 100, self.chary)
+            elif self.state == 'Create':
                 self.state = 'Gender'
                 self.cursorRect.midtop = (self.genderx - 100, self.gendery) 
         elif self.gui.RIGHT_KEY:
@@ -340,3 +349,6 @@ class CreateChar(Menu):
             elif self.state == 'Class':
                 self.classIndex -= 1
                 self.clas = self.gui.getClass(self.classIndex)
+        elif self.gui.START_KEY:
+            if self.state == 'Create':
+            self.Character = DnDCharacter.(self.gender, )

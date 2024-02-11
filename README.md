@@ -3,6 +3,7 @@ This is my attempt to digitalise the famous board game dungeons and dragons so t
 
 Python Requirements:
  Configparser
+ Pygame
 
 The files are structured as follows:
 The Main files are present in the working dictionary, consider the python files as the backend engine of the game.

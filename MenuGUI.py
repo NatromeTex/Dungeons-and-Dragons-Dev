@@ -380,4 +380,4 @@ class CreateChar(Menu):
                 self.clas = self.gui.getClass(self.classIndex)
         elif self.gui.START_KEY:
             if self.state == 'Create':
-                pass
+                self.gui.genStats(self.gender, self.clas, self.race)

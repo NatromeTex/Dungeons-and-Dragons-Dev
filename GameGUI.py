@@ -1,7 +1,7 @@
 import pygame
 import configparser
-import time
 from MenuGUI import *
+import random
 import os
 import json
 
@@ -94,8 +94,8 @@ class GameGUI():
 
     def getRace(self, ind):
         wd = f"Character/stat_modifiers.json"
-        game_path = self.getGamePath()
-        cgwd = os.path.join(game_path, wd)         # Loading the current game working directory
+        gamePath = self.getGamePath()
+        cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
             self.race = json.load(file)
         races = list(self.race.keys())
@@ -104,10 +104,11 @@ class GameGUI():
         else:
             ind = ind%len(races)
             return races[ind]
+
     def getClass(self, ind):
         wd = f"Character/stat_ranges.json"
-        game_path = self.getGamePath()
-        cgwd = os.path.join(game_path, wd)         # Loading the current game working directory
+        gamePath = self.getGamePath()
+        cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
             self.Class = json.load(file)
         classes = list(self.Class.keys())
@@ -115,67 +116,40 @@ class GameGUI():
             return classes[0]
         else:
             ind = ind%len(classes)
-            return classes[ind]
+            return classes[ind]        
 
-class DnDCharacter:
-    def __init__(self, gender, character_class, character_race):      # Receive Data from Create.py
-        self.gender = gender
-        self.character_class = character_class
-        self.character_race = character_race
-        self.stats = self.load_stat_ranges()
-        self.modifiers = self.load_stat_modifiers()
-        self.gamePath = GameGUI.getGamePath()
-        self.level = 0
-        
-        if self.character_class in self.stats :                             # Any mismatch with game files will be raised as error here
-            if self.character_race in self.modifiers:
-                if self.gender == 'Male' or self.gender == 'Female' :
-                    self.generate_random_stats()
-                else:
-                    raise ValueError(f"Invalid Gender: {self.gender}")
-            else:
-                raise ValueError(f"Invalid Character Race: {self.character_race}")
-        else:
-                raise ValueError(f"Invalid Character Class: {self.character_class}")        
-
-    def load_stat_ranges(self):
+    def getStatRanges(self):
         wd = f"Character/stat_ranges.json"
-        cgwd = os.path.join(game_path, wd)         # Loading the current game working directory
+        gamePath = self.getGamePath()
+        cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
             return json.load(file)
     
-    def load_stat_modifiers(self):
+    def getStatModifiers(self):
         wd = f"Character/stat_modifiers.json"
-        cgwd = os.path.join(game_path, wd )      # Loading the current game working directory
+        gamePath = self.getGamePath()
+        cgwd = os.path.join(gamePath, wd )      # Loading the current game working directory
         with open(cgwd) as file:
             return json.load(file)
 
-    def generate_random_stats(self):                                        # Creating Random Stats from Ranges specified in game and adding the modifiers for all classes and races
-        stat_ranges     = self.stats[self.character_class]
-        stat_modifiers  = self.modifiers[self.character_race]
+    def genStats(self, gender, Class, race):                                        # Creating Random Stats from Ranges specified in game and adding the modifiers for all classes and races
+        self.ranges = self.getStatRanges()
+        self.modifiers = self.getStatModifiers()
+        self.gender = gender
+        statRanges = self.ranges[Class]
+        statModifiers = self.modifiers[race]
 
-        self.strength       = random.randint(stat_ranges['strength']['min'], stat_ranges['strength']['max']) + stat_modifiers['strength']
-        self.dexterity      = random.randint(stat_ranges['dexterity']['min'], stat_ranges['dexterity']['max']) + stat_modifiers['dexterity']
-        self.constitution   = random.randint(stat_ranges['constitution']['min'], stat_ranges['constitution']['max']) + stat_modifiers['constitution']
-        self.intelligence   = random.randint(stat_ranges['intelligence']['min'], stat_ranges['intelligence']['max']) + stat_modifiers['intelligence']
-        self.wisdom         = random.randint(stat_ranges['wisdom']['min'], stat_ranges['wisdom']['max']) + stat_modifiers['wisdom']
-        self.charisma       = random.randint(stat_ranges['charisma']['min'], stat_ranges['charisma']['max']) + stat_modifiers['charisma']
+        self.strength       = random.randint(statRanges['strength']['min'], statRanges['strength']['max']) + statModifiers['strength']
+        self.dexterity      = random.randint(statRanges['dexterity']['min'], statRanges['dexterity']['max']) + statModifiers['dexterity']
+        self.constitution   = random.randint(statRanges['constitution']['min'], statRanges['constitution']['max']) + statModifiers['constitution']
+        self.intelligence   = random.randint(statRanges['intelligence']['min'], statRanges['intelligence']['max']) + statModifiers['intelligence']
+        self.wisdom         = random.randint(statRanges['wisdom']['min'], statRanges['wisdom']['max']) + statModifiers['wisdom']
+        self.charisma       = random.randint(statRanges['charisma']['min'], statRanges['charisma']['max']) + statModifiers['charisma']
         self.level          = (self.strength + self.dexterity + self.constitution + self.intelligence + self.wisdom + self.charisma) // 6
 
-    def display_stats(self):                                                # Displaying all created stats on
-        print(f"Gender      : {self.gender}")
-        print(f"Class       : {self.character_class}")
-        print(f"Strength    : {self.strength}")
-        print(f"Dexterity   : {self.dexterity}")
-        print(f"Constitution: {self.constitution}")
-        print(f"Intelligence: {self.intelligence}")
-        print(f"Wisdom      : {self.wisdom}")
-        print(f"Charisma    : {self.charisma}")
-
-    def save_to_json(self):                                                 # Saving all the data to a file for retreival
         character_data = {
             "Gender"        : self.gender,
-            "Class"         : self.character_class,
+            "Class"         : self.Class,
             "Strength"      : self.strength,
             "Dexterity"     : self.dexterity,
             "Constitution"  : self.constitution,
@@ -185,7 +159,7 @@ class DnDCharacter:
             "Level"         : self.level
         }
         save_directory = 'Current Games/Characters/'
-        filename = f"{self.name}.json"
+        filename = f"aa1.json"
         full_path = os.path.join(save_directory, filename)
 
         os.makedirs(save_directory, exist_ok=True)                           # Create directory if it doesn't exist
@@ -193,4 +167,14 @@ class DnDCharacter:
         with open(full_path, "w") as file:
             json.dump(character_data, file, indent=4)
         print(f"Character stats saved to {full_path}")
+
+    def displayStats(self):                                                # Displaying all created stats on
+        print(f"Gender      : {self.gender}")
+        print(f"Class       : {self.character_class}")
+        print(f"Strength    : {self.strength}")
+        print(f"Dexterity   : {self.dexterity}")
+        print(f"Constitution: {self.constitution}")
+        print(f"Intelligence: {self.intelligence}")
+        print(f"Wisdom      : {self.wisdom}")
+        print(f"Charisma    : {self.charisma}")        
             

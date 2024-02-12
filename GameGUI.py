@@ -1,5 +1,6 @@
 import pygame
 import configparser
+import time
 from MenuGUI import *
 import os
 import json
@@ -16,13 +17,14 @@ class GameGUI():
         self.font_name = "BreatheFire.ttf"
         self.clock = pygame.time.Clock()
         self.BLACK, self.WHITE = (0,0,0),(255,255,255)
+        self.intro = Intro(self)
         self.mainmenu = MainMenu(self)
         self.start = StartGame(self)
         self.options = OptionsMenu(self)
         self.credits = CreditsMenu(self)
         self.exit = ExitMenu(self)
         self.create = CreateChar(self)
-        self.currMenu = MainMenu(self)
+        self.currMenu = Intro(self)
 
     def checkEvent(self):
         for event in pygame.event.get():
@@ -46,6 +48,13 @@ class GameGUI():
     def drawText(self, text, size, x, y):
         font = pygame.font.Font(self.font_name, size)
         textSurface = font.render(text, True, self.WHITE)
+        textRect = textSurface.get_rect()
+        textRect.center = (x,y)
+        self.display.blit(textSurface,textRect)
+    
+    def drawTextCol(self, text, size, x, y, color):
+        font = pygame.font.Font(self.font_name, size)
+        textSurface = font.render(text, True, color)
         textRect = textSurface.get_rect()
         textRect.center = (x,y)
         self.display.blit(textSurface,textRect)

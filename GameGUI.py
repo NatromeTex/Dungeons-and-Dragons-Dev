@@ -1,4 +1,5 @@
 import pygame
+import string
 import configparser
 from MenuGUI import *
 import random
@@ -8,23 +9,24 @@ import json
 class GameGUI():
     def __init__(self):
         pygame.init()
-        self.running = True
-        self.playing = False
-        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY = False, False, False, False, False, False
+        self.running    = True
+        self.playing    = False
+        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY, self.BACKSPC, self.ANY_KEY = False, False, False, False, False, False, False, False
+        self.LEX_KEY    = ''
         self.DISPLAY_W, self.DISPLAY_H = 1920, 1080
-        self.display = pygame.Surface((self.DISPLAY_W,self.DISPLAY_H))
-        self.window = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
-        self.font_name = "BreatheFire.ttf"
-        self.clock = pygame.time.Clock()
+        self.display    = pygame.Surface((self.DISPLAY_W,self.DISPLAY_H))
+        self.window     = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
+        self.font_name  = "BreatheFire.ttf"
+        self.clock      = pygame.time.Clock()
         self.BLACK, self.WHITE = (0,0,0),(255,255,255)
-        self.intro = Intro(self)
-        self.mainmenu = MainMenu(self)
-        self.start = StartGame(self)
-        self.options = OptionsMenu(self)
-        self.credits = CreditsMenu(self)
-        self.exit = ExitMenu(self)
-        self.create = CreateChar(self)
-        self.currMenu = Intro(self)
+        self.intro      = Intro(self)
+        self.mainmenu   = MainMenu(self)
+        self.start      = StartGame(self)
+        self.options    = OptionsMenu(self)
+        self.credits    = CreditsMenu(self)
+        self.exit       = ExitMenu(self)
+        self.create     = CreateChar(self)
+        self.currMenu   = Intro(self)
 
     def checkEvent(self):
         for event in pygame.event.get():
@@ -32,6 +34,7 @@ class GameGUI():
                 self.running, self.playing = False, False
                 self.currMenu.runDisp = False
             if event.type == pygame.KEYDOWN:
+                self.ANY_KEY = True
                 if event.key == pygame.K_RETURN:
                     self.START_KEY = True
                 if event.key == pygame.K_ESCAPE:
@@ -44,6 +47,10 @@ class GameGUI():
                     self.LEFT_KEY = True
                 if event.key == pygame.K_RIGHT:
                     self.RIGHT_KEY = True
+                if event.key == pygame.K_BACKSPACE:
+                    self.BACKSPC = True
+                if event.unicode.isalpha() or event.unicode.isdigit():
+                    self.LEX_KEY = chr(event.key)                
     
     def drawText(self, text, size, x, y):
         font = pygame.font.Font(self.font_name, size)
@@ -63,7 +70,8 @@ class GameGUI():
         pygame.draw.rect(self.window, color, pygame.Rect(x1, y1, x2, y2))
 
     def resetKeys(self):
-        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY = False, False, False, False, False, False
+        self.START_KEY, self.DOWN_KEY, self.UP_KEY, self.BACK_KEY, self.LEFT_KEY, self.RIGHT_KEY, self.BACKSPC, self.ANY_KEY = False, False, False, False, False, False, False, False
+        self.LEX_KEY = ''
 
     def setGamePath(self, path):
         config = configparser.ConfigParser()
@@ -93,7 +101,7 @@ class GameGUI():
             return names[ind]
 
     def getRace(self, ind):
-        wd = f"Character/stat_modifiers.json"
+        wd = f"Character\stat_modifiers.json"
         gamePath = self.getGamePath()
         cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
@@ -106,7 +114,7 @@ class GameGUI():
             return races[ind]
 
     def getClass(self, ind):
-        wd = f"Character/stat_ranges.json"
+        wd = f"Character\stat_ranges.json"
         gamePath = self.getGamePath()
         cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
@@ -119,25 +127,32 @@ class GameGUI():
             return classes[ind]        
 
     def getStatRanges(self):
-        wd = f"Character/stat_ranges.json"
+        wd = f"Character\stat_ranges.json"
         gamePath = self.getGamePath()
         cgwd = os.path.join(gamePath, wd)         # Loading the current game working directory
         with open(cgwd) as file:
             return json.load(file)
     
     def getStatModifiers(self):
-        wd = f"Character/stat_modifiers.json"
+        wd = f"Character\stat_modifiers.json"
         gamePath = self.getGamePath()
         cgwd = os.path.join(gamePath, wd )      # Loading the current game working directory
         with open(cgwd) as file:
             return json.load(file)
+    
+    def getCharStats(self, name):
+        cf = f"Current Games\Characters\{name}.json"
+        with open(cf) as file:
+            return json.load(file)
 
-    def genStats(self, gender, Class, race):                                        # Creating Random Stats from Ranges specified in game and adding the modifiers for all classes and races
-        self.ranges = self.getStatRanges()
+
+    def genStats(self, gender, name, Class, race):                                        # Creating Random Stats from Ranges specified in game and adding the modifiers for all classes and races
+        self.ranges    = self.getStatRanges()
         self.modifiers = self.getStatModifiers()
-        self.gender = gender
-        statRanges = self.ranges[Class]
-        statModifiers = self.modifiers[race]
+        self.gender    = gender
+        self.name      = name
+        statRanges     = self.ranges[Class]
+        statModifiers  = self.modifiers[race]
 
         self.strength       = random.randint(statRanges['strength']['min'], statRanges['strength']['max']) + statModifiers['strength']
         self.dexterity      = random.randint(statRanges['dexterity']['min'], statRanges['dexterity']['max']) + statModifiers['dexterity']
@@ -148,8 +163,10 @@ class GameGUI():
         self.level          = (self.strength + self.dexterity + self.constitution + self.intelligence + self.wisdom + self.charisma) // 6
 
         character_data = {
+            "Name"          : self.name,
             "Gender"        : self.gender,
-            "Class"         : self.Class,
+            "Class"         : Class,
+            "Race"          : race,
             "Strength"      : self.strength,
             "Dexterity"     : self.dexterity,
             "Constitution"  : self.constitution,
@@ -159,7 +176,7 @@ class GameGUI():
             "Level"         : self.level
         }
         save_directory = 'Current Games/Characters/'
-        filename = f"aa1.json"
+        filename = f"{self.name}.json"
         full_path = os.path.join(save_directory, filename)
 
         os.makedirs(save_directory, exist_ok=True)                           # Create directory if it doesn't exist
@@ -169,6 +186,7 @@ class GameGUI():
         print(f"Character stats saved to {full_path}")
 
     def displayStats(self):                                                # Displaying all created stats on
+        print(f"Name        : {self.name}")
         print(f"Gender      : {self.gender}")
         print(f"Class       : {self.character_class}")
         print(f"Strength    : {self.strength}")

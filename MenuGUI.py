@@ -172,8 +172,7 @@ class StartGame(Menu):
                 pass
             elif self.state == 'SelChar':
                 self.index += 1
-                self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
-                print(self.charName)              
+                self.charName = self.gui.getCharName("Current Games\\Characters", self.index)              
         elif self.gui.START_KEY:
             if self.state == 'SelChar' and self.charName == '                  <Create Character>':
                 self.gui.currMenu = self.gui.create
@@ -295,12 +294,14 @@ class CreateChar(Menu):
         Menu.__init__(self,gui)
         self.state = "Gender"
         self.genderx, self.gendery = self.mid_w - 500, self.mid_h - 250
-        self.classx, self.classy = self.mid_w - 500, self.mid_h - 150
-        self.racex, self. racey = self.mid_w - 500, self.mid_h - 50
+        self.namex, self.namey = self.mid_w - 500, self.mid_h - 150
+        self.classx, self.classy = self.mid_w - 500, self.mid_h - 50
+        self.racex, self. racey = self.mid_w - 500, self.mid_h + 50
         self.createx, self.createy = self.mid_w, self.mid_h + 200
         self.raceIndex = 0
         self.classIndex = 0
         self.gender = 'Male'
+        self.name = ''
         self.clas = self.gui.getClass(self.classIndex)
         self.race = self.gui.getRace(self.raceIndex)
         self.cursorRect.midtop = (self.genderx - 100, self.gendery)
@@ -313,6 +314,8 @@ class CreateChar(Menu):
         self.gui.drawText('Character Creation', 50, self.mid_w, self.mid_h - 350)
         self.gui.drawText('Gender: ', 50, self.genderx, self.gendery)
         self.gui.drawText(self.gender, 50, self.genderx + 200, self.gendery)
+        self.gui.drawText('Name: ', 50, self.namex, self.namey)
+        self.gui.drawText(self.name, 50, self.namex + 200, self.namey)
         self.gui.drawText('Class: ', 50, self.classx, self.classy)
         self.gui.drawText(self.clas, 50, self.classx + 200, self.classy)
         self.gui.drawText('Race: ', 50, self.racex, self.racey)
@@ -332,9 +335,12 @@ class CreateChar(Menu):
             if self.state == 'Gender':
                 self.state = 'Create'
                 self.cursorRect.midtop = (self.createx - 200, self.createy)
-            elif self.state == 'Class':
+            elif self.state == 'Name':
                 self.state = 'Gender'
                 self.cursorRect.midtop = (self.genderx - 100, self.gendery)
+            elif self.state == 'Class':
+                self.state = 'Name'
+                self.cursorRect.midtop = (self.namex - 100, self.namey)
             elif self.state == 'Race':
                 self.state = 'Class'
                 self.cursorRect.midtop = (self.classx - 100, self.classy)
@@ -343,6 +349,9 @@ class CreateChar(Menu):
                 self.cursorRect.midtop = (self.racex - 100, self.racey)
         elif self.gui.DOWN_KEY:
             if self.state == 'Gender':
+                self.state = 'Name'
+                self.cursorRect.midtop = (self.namex - 100, self.namey)
+            elif self.state == 'Name':
                 self.state = 'Class'
                 self.cursorRect.midtop = (self.classx - 100, self.classy)
             elif self.state == 'Class':
@@ -380,4 +389,45 @@ class CreateChar(Menu):
                 self.clas = self.gui.getClass(self.classIndex)
         elif self.gui.START_KEY:
             if self.state == 'Create':
-                self.gui.genStats(self.gender, self.clas, self.race)
+                self.gui.genStats(self.gender, self.name, self.clas, self.race)
+                self.displayStats()
+        elif self.gui.BACKSPC:
+            self.name = self.name[:-1]
+        elif self.gui.LEX_KEY != '':
+            self.name += self.gui.LEX_KEY
+    
+    def displayStats(self):
+        dispstat = True
+        self.char = self.gui.getCharStats(self.name)
+        STR = self.char['Strength']
+        DEX = self.char['Dexterity']
+        CON = self.char['Constitution']
+        INT = self.char['Intelligence']
+        WIS = self.char['Wisdom']
+        CHR = self.char['Charisma']
+        LVL = self.char['Level']
+        while dispstat:
+            self.gui.display.fill(self.gui.BLACK)
+            self.gui.checkEvent()
+            if self.gui.BACK_KEY:
+                dispstat = False
+                self.gui.currMenu = self.gui.start
+                self.runDisp = False
+            self.gui.drawText(f'Character Created', 40, self.mid_w, self.mid_h - 400)
+            self.gui.drawText(f'Name         : {self.name}', 30, self.mid_w, self.mid_h - 300)
+            self.gui.drawText(f'Gender       : {self.gender}', 30, self.mid_w, self.mid_h - 250)
+            self.gui.drawText(f'Class        : {self.clas}', 30, self.mid_w, self.mid_h - 200)
+            self.gui.drawText(f'Race         : {self.race}', 30, self.mid_w, self.mid_h - 150)
+            self.gui.drawText(f'Strength     : {STR}', 30, self.mid_w, self.mid_h - 100)
+            self.gui.drawText(f'Dexterity    : {DEX}', 30, self.mid_w, self.mid_h - 50)
+            self.gui.drawText(f'Constitution : {CON}', 30, self.mid_w, self.mid_h)
+            self.gui.drawText(f'Intelligence : {INT}', 30, self.mid_w, self.mid_h + 50)
+            self.gui.drawText(f'Wisdom       : {WIS}', 30, self.mid_w, self.mid_h + 100)
+            self.gui.drawText(f'Charisma     : {CHR}', 30, self.mid_w, self.mid_h + 150)
+            self.gui.drawText(f'Level        : {LVL}', 30, self.mid_w, self.mid_h + 200)
+            self.gui.drawText('Press ESC to continue', 40, self.mid_w, self.mid_h + 300)
+            self.showFps()
+            self.blitScreen()
+            self.gui.resetKeys()
+            self.gui.clock.tick(144)
+            

@@ -26,7 +26,7 @@ class GameGUI():
         self.credits    = CreditsMenu(self)
         self.exit       = ExitMenu(self)
         self.create     = CreateChar(self)
-        self.currMenu   = Intro(self)
+        self.currMenu   = CreateChar(self)
 
     def checkEvent(self):
         for event in pygame.event.get():
@@ -57,6 +57,13 @@ class GameGUI():
         textSurface = font.render(text, True, self.WHITE)
         textRect = textSurface.get_rect()
         textRect.center = (x,y)
+        self.display.blit(textSurface,textRect)
+    
+    def drawTextTab(self, text, size, x, y):
+        font = pygame.font.Font(self.font_name, size)
+        textSurface = font.render(text, True, self.WHITE)
+        textRect = textSurface.get_rect()
+        textRect.midleft = (x,y)
         self.display.blit(textSurface,textRect)
     
     def drawTextCol(self, text, size, x, y, color):

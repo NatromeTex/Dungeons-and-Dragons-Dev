@@ -61,11 +61,10 @@
         "Great Club"            :[{"wep_id":"54002", "phy":160, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard":100, "rarity": "Epic"}],
         "Steel Hammer"          :[{"wep_id":"54003", "phy":175, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Uncommon"}],
         "Smithing Hammer"       :[{"wep_id":"54004", "phy":110, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 80, "rarity": "Rare"}],
-        "Shock Hammer"          :[{"wep_id":"54005", "phy": 70, "magic": 0, "holy":0, "elemental":40, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
-        "Mace"                  :[{"wep_id":"54006", "phy":140, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Rare"}],
-        "Morningstar"           :[{"wep_id":"54007", "phy": 80, "magic": 0, "holy":0, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
-        "Flail"                 :[{"wep_id":"54008", "phy": 85, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 70, "rarity": "Epic"}],
-        "Sledgehammer"          :[{"wep_id":"54009", "phy": 80, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":60, "rarity": "Epic"}]
+        "Mace"                  :[{"wep_id":"54005", "phy":140, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 0, "bludgeon": 1, "guard": 95, "rarity": "Rare"}],
+        "Morningstar"           :[{"wep_id":"54006", "phy": 80, "magic": 0, "holy":0, "elemental":10, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 60, "rarity": "Epic"}],
+        "Flail"                 :[{"wep_id":"54007", "phy": 85, "magic": 0, "holy":0, "elemental": 0, "slash": 0, "pierce": 1, "bludgeon": 1, "guard": 70, "rarity": "Epic"}],
+        "Sledgehammer"          :[{"wep_id":"54008", "phy": 80, "magic": 0, "holy":0, "elemental": 0, "slash": 1, "pierce": 1, "bludgeon": 0, "guard":60, "rarity": "Epic"}]
     },
     "Spears":
     {

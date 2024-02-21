@@ -2,6 +2,8 @@ import pygame
 import string
 import configparser
 from MenuGUI import *
+from play1 import *
+
 import random
 import os
 import json
@@ -18,7 +20,7 @@ class GameGUI():
         self.window     = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
         self.font_name  = "BreatheFire.ttf"
         self.clock      = pygame.time.Clock()
-        self.BLACK, self.WHITE = (0,0,0),(255,255,255)
+        self.BLACK, self.WHITE = (0,0,0),(220,220,220)
         self.intro      = Intro(self)
         self.mainmenu   = MainMenu(self)
         self.start      = StartGame(self)
@@ -26,7 +28,9 @@ class GameGUI():
         self.credits    = CreditsMenu(self)
         self.exit       = ExitMenu(self)
         self.create     = CreateChar(self)
-        self.currMenu   = CreateChar(self)
+        self.currMenu   = Intro(self)
+        self.gintro     = gameIntro(self)
+        self.currGMenu  = gameIntro(self) 
 
     def checkEvent(self):
         for event in pygame.event.get():
@@ -72,6 +76,23 @@ class GameGUI():
         textRect = textSurface.get_rect()
         textRect.center = (x,y)
         self.display.blit(textSurface,textRect)
+    
+    def fadeIn(self, text, size, x, y, color):
+        for i in range(color):
+            self.drawTextCol(text, size, x, y, (0,0,0))
+            self.drawTextCol(text, size, x, y, (i,i,i))
+            self.window.blit(self.display,(0,0))
+            pygame.display.update()            
+        self.clock.tick(144)
+    
+    def fadeOut(self, text, size, x, y, color):
+        for i in range(color,0,-1):
+            self.drawTextCol(text, size, x, y, (0,0,0))
+            self.drawTextCol(text, size, x, y, (i,i,i))
+            self.window.blit(self.display,(0,0))
+            pygame.display.update()            
+        self.clock.tick(144)
+            
     
     def drawRect(self, color, x1, y1, x2, y2):
         pygame.draw.rect(self.window, color, pygame.Rect(x1, y1, x2, y2))

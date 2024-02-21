@@ -8,6 +8,7 @@ class Menu():
         self.runDisp = True
         self.cursorRect = pygame.Rect(0, 0, 50, 50)
         self.offset = -200
+        self.fst = True
 
     def drawCursor(self):
         self.gui.drawText('x', 50, self.cursorRect.x, self.cursorRect.y)
@@ -26,28 +27,8 @@ class Intro(Menu):
         Menu.__init__(self,gui)
 
     def dispMenu(self):
-        color = (0,0,0)
-        i = 0
-        while i <= 160:
-            self.gui.display.fill(self.gui.BLACK)
-            self.gui.drawTextCol('Pure Black Studios', 75, self.mid_w, self.mid_h, color)
-            self.blitScreen()
-            self.showFps()
-            self.blitScreen()
-            self.gui.clock.tick(144)
-            i += 1
-            color = (i,i,i)
-            time.sleep(0.02)
-        while i >= 0:
-            self.gui.display.fill(self.gui.BLACK)
-            self.gui.drawTextCol('Pure Black Studios', 75, self.mid_w, self.mid_h, color)
-            self.blitScreen()
-            self.showFps()
-            self.blitScreen()
-            self.gui.clock.tick(144)
-            i -= 1
-            color = (i,i,i)
-            time.sleep(0.001)
+        self.gui.fadeIn('Pure Black Studios', 75, self.mid_w, self.mid_h, 160)
+        self.gui.fadeOut('Pure Black Studios', 75, self.mid_w, self.mid_h, 160)
         self.gui.currMenu = self.gui.mainmenu    
             
 class MainMenu(Menu):
@@ -62,10 +43,19 @@ class MainMenu(Menu):
 
     def dispMenu(self):
         self.runDisp = True
+        if self.fst == True:
+            self.gui.display.fill(self.gui.BLACK)
+            self.gui.fadeIn('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5, 220)
+            self.gui.fadeIn('Start Game', 50, self.startx, self.starty, 220)
+            self.gui.fadeIn('Options', 50, self.optionsx, self.optionsy, 220)
+            self.gui.fadeIn('Credits', 50, self.creditsx, self.creditsy, 220)
+            self.gui.fadeIn('Exit', 50, self.exitx, self.exity, 220)
+            self.fst = False
         while self.runDisp:
             self.gui.checkEvent()
             self.checkIO()
             self.gui.display.fill(self.gui.BLACK)
+            self.gui.drawText('Exit', 50, self.exitx, self.exity)
             self.gui.drawText('Dungeons and Dragons-Dev', 75, self.gui.DISPLAY_W/2, self.gui.DISPLAY_H/5)
             self.gui.drawText('Start Game', 50, self.startx, self.starty)
             self.gui.drawText('Options', 50, self.optionsx, self.optionsy)
@@ -166,7 +156,6 @@ class StartGame(Menu):
             elif self.state == 'SelChar':
                 self.index -= 1
                 self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
-                print(self.charName)
         elif self.gui.RIGHT_KEY:
             if self.state == 'SelGame':
                 pass
@@ -176,6 +165,10 @@ class StartGame(Menu):
         elif self.gui.START_KEY:
             if self.state == 'SelChar' and self.charName == '                  <Create Character>':
                 self.gui.currMenu = self.gui.create
+                self.runDisp = False
+            else:
+                self.gui.running = False
+                self.gui.playing = True
                 self.runDisp = False
 
 

@@ -1,5 +1,6 @@
 import pygame
 import time
+import os
 
 class Menu():
     def __init__(self, gui):
@@ -9,6 +10,9 @@ class Menu():
         self.cursorRect = pygame.Rect(0, 0, 50, 50)
         self.offset = -200
         self.fst = True
+        self.assets = os.path.join(self.gui.getGamePath(),'Assets')
+        pygame.mixer.music.load(os.path.join(self.assets,'mainmenu.mp3'))
+        pygame.mixer.music.play(-1)
 
     def drawCursor(self):
         self.gui.drawText('x', 50, self.cursorRect.x, self.cursorRect.y)
@@ -236,7 +240,11 @@ class CreditsMenu(Menu):
                 self.runDisp = False
             self.gui.display.fill(self.gui.BLACK)
             self.gui.drawText('Credits', 70, self.mid_w, self.mid_h/2)
-            self.gui.drawText('Coding By Natrome Tex', 50, self.mid_w, self.mid_h)
+            self.gui.drawText('Coding', 50, self.mid_w, self.mid_h - 100)
+            self.gui.drawText('Natrome Tex', 50, self.mid_w, self.mid_h - 50)
+            self.gui.drawText('Main Menu Music:', 50, self.mid_w, self.mid_h + 50)
+            self.gui.drawText('The White Lion', 50, self.mid_w, self.mid_h  + 150)
+            self.gui.drawText('Composer: guilhermebernardes', 50, self.mid_w, self.mid_h + 200)
             self.showFps()
             self.blitScreen()
             self.gui.clock.tick(144)

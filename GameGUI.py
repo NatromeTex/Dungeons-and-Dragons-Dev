@@ -1,4 +1,4 @@
-import pygame
+from pygame import *
 import string
 import configparser
 from MenuGUI import *
@@ -30,8 +30,8 @@ class GameGUI():
         self.create     = CreateChar(self)
         self.currMenu   = Intro(self)
         self.gintro     = gameIntro(self)
-        self.currGMenu  = gameIntro(self) 
-
+        self.currGMenu  = gameIntro(self)
+        
     def checkEvent(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

@@ -19,6 +19,9 @@ class GameGUI():
         self.display    = pygame.Surface((self.DISPLAY_W,self.DISPLAY_H))
         self.window     = pygame.display.set_mode(((self.DISPLAY_W,self.DISPLAY_H)))
         self.font_name  = "BreatheFire.ttf"
+        self.assets     = os.path.join(self.getGamePath(),'Assets')
+        self.butsfx     = pygame.mixer.Sound(os.path.join(self.assets,'BNA_UI19.wav'))
+        self.menuch     = pygame.mixer.Sound(os.path.join(self.assets,'BNA_UI49.wav'))
         self.clock      = pygame.time.Clock()
         self.BLACK, self.WHITE = (0,0,0),(220,220,220)
         self.intro      = Intro(self)

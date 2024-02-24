@@ -10,9 +10,9 @@ class Menu():
         self.cursorRect = pygame.Rect(0, 0, 50, 50)
         self.offset = -200
         self.fst = True
-        self.assets = os.path.join(self.gui.getGamePath(),'Assets')
-        pygame.mixer.music.load(os.path.join(self.assets,'mainmenu.mp3'))
+        pygame.mixer.music.load(os.path.join(self.gui.assets,"mainmenu.mp3"))
         pygame.mixer.music.play(-1)
+        pygame.mixer.music.set_volume(0.1)
 
     def drawCursor(self):
         self.gui.drawText('x', 50, self.cursorRect.x, self.cursorRect.y)
@@ -72,6 +72,7 @@ class MainMenu(Menu):
 
     def moveCursor(self):
         if self.gui.DOWN_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Start':
                 self.cursorRect.midtop = (self.optionsx + self.offset, self.optionsy)
                 self.state = 'Options'
@@ -85,6 +86,7 @@ class MainMenu(Menu):
                 self.cursorRect.midtop = (self.startx + self.offset, self.starty)
                 self.state = 'Start'
         elif self.gui.UP_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Start':
                 self.cursorRect.midtop = (self.exitx + self.offset, self.exity)
                 self.state = 'Exit'
@@ -98,12 +100,14 @@ class MainMenu(Menu):
                 self.cursorRect.midtop = (self.creditsx + self.offset, self.creditsy)
                 self.state = 'Credits'
         elif self.gui.BACK_KEY:
+            self.gui.butsfx.play()
             self.gui.currMenu = self.gui.exit
             self.runDisp = False     
     
     def checkIO(self):
         self.moveCursor()
         if self.gui.START_KEY:
+            self.gui.menuch.play()
             if self.state == "Start":
                 self.gui.currMenu = self.gui.start
             elif self.state == "Options":
@@ -145,9 +149,11 @@ class StartGame(Menu):
 
     def checkIO(self):
         if self.gui.BACK_KEY:
+            self.gui.menuch.play()
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
         elif self.gui.UP_KEY or self.gui.DOWN_KEY:
+            self.gui.butsfx.play()
             if self.state == "SelGame":
                 self.state = "SelChar"
                 self.cursorRect.midtop = (self.selCharx + self.offset - 50, self.selChary)
@@ -155,18 +161,21 @@ class StartGame(Menu):
                 self.state = "SelGame"
                 self.cursorRect.midtop = (self.selGamex + self.offset, self.selGamey) 
         elif self.gui.LEFT_KEY:
+            self.gui.butsfx.play()
             if self.state == 'SelGame':
                 pass
             elif self.state == 'SelChar':
                 self.index -= 1
                 self.charName = self.gui.getCharName("Current Games\\Characters", self.index)
         elif self.gui.RIGHT_KEY:
+            self.gui.butsfx.play()
             if self.state == 'SelGame':
                 pass
             elif self.state == 'SelChar':
                 self.index += 1
                 self.charName = self.gui.getCharName("Current Games\\Characters", self.index)              
         elif self.gui.START_KEY:
+            self.gui.menuch.play()
             if self.state == 'SelChar' and self.charName == '                  <Create Character>':
                 self.gui.currMenu = self.gui.create
                 self.runDisp = False
@@ -202,9 +211,11 @@ class OptionsMenu(Menu):
     
     def checkIO(self):
         if self.gui.BACK_KEY:
+            self.gui.menuch.play()
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
         elif self.gui.UP_KEY:
+            self.gui.butsfx.play()
             if self.state == "Graphics":
                 self.state = "Sounds"
                 self.cursorRect.midtop = (self.volx + self.offset, self.voly)
@@ -215,6 +226,7 @@ class OptionsMenu(Menu):
                 self.state = "Graphics"
                 self.cursorRect.midtop = (self.graphx + self.offset, self.graphy)                 
         elif self.gui.DOWN_KEY:
+            self.gui.butsfx.play()
             if self.state == "Graphics":
                 self.state = "Controls"
                 self.cursorRect.midtop = (self.controlsx + self.offset, self.controlsy)
@@ -225,6 +237,7 @@ class OptionsMenu(Menu):
                 self.state = "Sounds"
                 self.cursorRect.midtop = (self.volx + self.offset, self.voly)
         elif self.gui.START_KEY:
+            self.gui.butsfx.play()
             pass
 
 class CreditsMenu(Menu):
@@ -236,6 +249,7 @@ class CreditsMenu(Menu):
         while self.runDisp:
             self.gui.checkEvent()
             if self.gui.START_KEY or self.gui.BACK_KEY:
+                self.gui.menuch.play()
                 self.gui.currMenu = self.gui.mainmenu
                 self.runDisp = False
             self.gui.display.fill(self.gui.BLACK)
@@ -277,9 +291,11 @@ class ExitMenu(Menu):
 
     def checkIO(self):
         if self.gui.BACK_KEY or self.state == 'No' and self.gui.START_KEY:
+            self.gui.menuch.play()
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
         elif self.gui.RIGHT_KEY or self.gui.LEFT_KEY:
+            self.gui.butsfx.play()
             if self.state == "Yes":
                 self.state = "No"
                 self.cursorRect.midtop = (self.nox - 100, self.noy)
@@ -287,6 +303,7 @@ class ExitMenu(Menu):
                 self.state = "Yes"
                 self.cursorRect.midtop = (self.yesx - 100, self.yesy)                 
         elif self.state == 'Yes' and self.gui.START_KEY:
+            self.gui.menuch.play()
             self.gui.running, self.gui.playing = False, False
             self.runDisp = False
 
@@ -330,9 +347,11 @@ class CreateChar(Menu):
 
     def checkIO(self):
         if self.gui.BACK_KEY:
+            self.gui.menuch.play()
             self.gui.currMenu = self.gui.mainmenu
             self.runDisp = False
         elif self.gui.UP_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Gender':
                 self.state = 'Create'
                 self.cursorRect.midtop = (self.createx - 200, self.createy)
@@ -349,6 +368,7 @@ class CreateChar(Menu):
                 self.state = 'Race'
                 self.cursorRect.midtop = (self.racex - 100, self.racey)
         elif self.gui.DOWN_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Gender':
                 self.state = 'Name'
                 self.cursorRect.midtop = (self.namex - 100, self.namey)
@@ -365,6 +385,7 @@ class CreateChar(Menu):
                 self.state = 'Gender'
                 self.cursorRect.midtop = (self.genderx - 100, self.gendery) 
         elif self.gui.RIGHT_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Gender':
                 if self.gender == 'Male':
                     self.gender = 'Female'
@@ -377,6 +398,7 @@ class CreateChar(Menu):
                 self.classIndex += 1
                 self.clas = self.gui.getClass(self.classIndex)
         elif self.gui.LEFT_KEY:
+            self.gui.butsfx.play()
             if self.state == 'Gender':
                 if self.gender == 'Male':
                     self.gender = 'Female'
@@ -389,6 +411,7 @@ class CreateChar(Menu):
                 self.classIndex -= 1
                 self.clas = self.gui.getClass(self.classIndex)
         elif self.gui.START_KEY:
+            self.gui.menuch.play()
             if self.state == 'Create':
                 self.gui.genStats(self.gender, self.name, self.clas, self.race)
                 self.displayStats()
@@ -411,6 +434,7 @@ class CreateChar(Menu):
             self.gui.display.fill(self.gui.BLACK)
             self.gui.checkEvent()
             if self.gui.BACK_KEY:
+                self.gui.menuch.play()
                 dispstat = False
                 self.gui.currMenu = self.gui.start
                 self.runDisp = False
